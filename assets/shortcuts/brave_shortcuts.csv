@@ -1,0 +1,51 @@
+ID,Title,Windows,Category
+1,New Tab,Ctrl + T,General
+2,Reopen Closed Tab,Ctrl + Shift + T,General
+3,Close Tab,Ctrl + W,General
+4,New Window,Ctrl + N,General
+5,New Private Window,Ctrl + Shift + N,General
+6,Close Window (All Tabs),Ctrl + Shift + W,General
+7,Open Print Dialog,Ctrl + P,General
+8,Open Save Page Dialog,Ctrl + S,General
+9,Open History,Ctrl + H,General
+10,Open Downloads,Ctrl + J,General
+11,Open Bookmarks Manager,Ctrl + Shift + O,General
+12,Show or Hide Bookmarks Bar,Ctrl + Shift + B,General
+13,Open Main Menu,Alt + F or Alt + E or F10 + Enter,General
+14,Open Task Manager,Shift + Esc,General
+15,Set Focus Toolbar First Item,Shift + Alt + T,General
+16,Set Focus Toolbar Last Item,F10,General
+17,Switch Focus Pane,F6,Navigation
+18,Jump to Next Tab,Ctrl + Tab / Ctrl + Page Down,Tabs
+19,Jump to Previous Tab,Ctrl + Shift + Tab / Ctrl + Page Up,Tabs
+20,Go to Tab 1‑8,Ctrl + 1 to 8,Tabs
+21,Go to Last Tab,Ctrl + 9,Tabs
+22,Open Home Page,Alt + Home,Navigation
+23,Go Back,Alt + Left Arrow,Navigation
+24,Go Forward,Alt + Right Arrow,Navigation
+25,Stop Loading Page,Esc,Navigation
+26,Reload Page,Ctrl + R / F5,Navigation
+27,Hard Reload (Ignore Cache),Ctrl + Shift + R / Ctrl + Shift + F5,Navigation
+28,Open Find Bar,Ctrl + F or F3,Navigation
+29,Find Next Match,Ctrl + G,Navigation
+30,Find Previous Match,Ctrl + Shift + G,Navigation
+31,Open Developer Tools,Ctrl + Shift + J or F12,Developer
+32,Open View Page Source,Ctrl + U,Developer
+33,Open Clear Browsing Data Dialog,Ctrl + Shift + Delete,Developer
+34,Zoom In,Ctrl + +,View
+35,Zoom Out,Ctrl + -,View
+36,Reset Zoom,Ctrl + 0,View
+37,Fullscreen Mode,F11,View
+38,Scroll Down (One Screen),Space / Page Down,Scrolling
+39,Scroll Up (One Screen),Shift + Space / Page Up,Scrolling
+40,Scroll to Top,Home,Scrolling
+41,Scroll to Bottom,End,Scrolling
+42,Search in Address Bar / Omnibox,Ctrl + L / Alt + D / F6,Search
+43,Search from Address Bar (Alt + Enter),Type + Alt + Enter,Search
+44,Search from Address Bar (Enter),Type + Enter,Search
+45,Search Shortcut (Ctrl + K / E),Ctrl + K or Ctrl + E,Search
+46,Paste and Go / Search from Address Bar,Ctrl + Shift + L,Search
+47,Add Bookmark for Current Page,Ctrl + D,Bookmarks
+48,Bookmark All Tabs in Folder,Ctrl + Shift + D,Bookmarks
+49,Open Profile Menu,Ctrl + Shift + M,General
+50,Quit Brave,Ctrl + Shift + W or Alt + F then X,General

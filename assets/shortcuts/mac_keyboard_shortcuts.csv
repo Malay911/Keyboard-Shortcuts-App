@@ -1,0 +1,50 @@
+ID,Title,Keys,Description,Category
+1,Copy,Cmd + C,Copy selected content,General
+2,Paste,Cmd + V,Paste copied content,General
+3,Cut,Cmd + X,Cut selected content,General
+4,Undo,Cmd + Z,Undo last action,General
+5,Redo,Cmd + Shift + Z,Redo the undone action,General
+6,Select All,Cmd + A,Select all content,General
+7,Save,Cmd + S,Save current document,General
+8,Open File,Cmd + O,Open a file,General
+9,Print,Cmd + P,Print current document,General
+10,New Document,Cmd + N,Create new file/document,General
+11,Close Window,Cmd + W,Close active window,General
+12,Find,Cmd + F,Find text/content,General
+13,Replace,Cmd + Shift + H,Replace found text,General
+14,Spotlight Search,Cmd + Space,Search apps/files quickly,General
+15,Switch Between Apps,Cmd + Tab,Toggle through open apps,Window Management
+16,Close Window,Cmd + W,Close active window,Window Management
+17,Minimize Window,Cmd + M,Minimize current window,Window Management
+18,Hide App,Cmd + H,Hide the current app,Window Management
+19,Hide Other Apps,Cmd + Option + H,Hide all other apps,Window Management
+20,Show Desktop,F11 or Fn + F11,Show desktop by hiding windows,Window Management
+21,Mission Control,Control + ↑,View all open windows/desktops,Window Management
+22,Application Windows,Control + ↓,Show windows of current app,Window Management
+23,Full Screen,Control + Cmd + F,Enter full-screen mode,Window Management
+24,Force Quit,Cmd + Option + Esc,Force close an unresponsive app,Window Management
+25,Open Finder,Cmd + Option + Space,Open new Finder window,File Explorer
+26,New Finder Window,Cmd + N,Open a new Finder tab,File Explorer
+27,Delete File,Cmd + Delete,Move file to Trash,File Explorer
+28,Empty Trash,Cmd + Shift + Delete,Permanently delete Trash items,File Explorer
+29,Open Spotlight Search,Cmd + Space,Search for files/apps,File Explorer
+30,Go to Folder,Cmd + Shift + G,Jump to a specific folder,File Explorer
+31,Show Info (Properties),Cmd + I,Show file/folder info,File Explorer
+32,Rename,Return (Enter),Rename selected file/folder,File Explorer
+33,Search in Finder,Cmd + F,Find files in Finder,File Explorer
+34,Toggle VoiceOver,Cmd + F5,Enable screen reader,Accessibility
+35,Accessibility Settings,Option + Cmd + F5,Open accessibility options,Accessibility
+36,Zoom In,Option + Cmd + =,Magnify screen,Accessibility
+37,Zoom Out,Option + Cmd + -,Reduce screen zoom,Accessibility
+38,Invert Colors,Ctrl + Option + Cmd + 8,Toggle color inversion,Accessibility
+39,Enable Dictation,Fn + D,Start speech-to-text,Accessibility
+40,Show/Hide Dock,Cmd + option + D,Toggle Dock visibility,Taskbar
+41,Open App from Dock (position),Ctrl + F3 + arrows,Navigate Dock apps,Taskbar
+42,Launch new instance,Cmd + Click Dock icon,Open a new app window,Taskbar
+43,App Context Menu,Ctrl + Click Dock icon,Show app options menu,Taskbar
+44,Capture Entire Screen,Cmd + Shift + 3,Screenshot full screen,Screenshot & Recording
+45,Capture Selected Portion,Cmd + Shift + 4,Screenshot custom area,Screenshot & Recording
+46,Capture Window,"Cmd + Shift + 4, then Space",Screenshot a specific window,Screenshot & Recording
+47,Open Screenshot Toolbar,Cmd + Shift + 5,Open screen capture menu,Screenshot & Recording
+48,Start Screen Recording,Cmd + Shift + 5 (toolbar),Start recording screen,Screenshot & Recording
+49,QuickTime Screen Record,QuickTime → File → New Screen Recording,Manual screen recording,Screenshot & Recording

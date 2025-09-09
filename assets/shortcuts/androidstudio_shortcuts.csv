@@ -1,0 +1,56 @@
+ID,Title,Windows,macOS,Category
+1,Copy,Ctrl + C,Cmd + C,General
+2,Paste,Ctrl + V,Cmd + V,General
+3,Cut,Ctrl + X,Cmd + X,General
+4,Undo,Ctrl + Z,Cmd + Z,General
+5,Redo,Ctrl + Shift + Z,Cmd + Shift + Z,General
+6,Save All,Ctrl + S,Cmd + S,General
+7,Select All,Ctrl + A,Cmd + A,General
+8,Duplicate Line,Ctrl + D,Cmd + D,General
+9,Delete Line,Ctrl + Y,Cmd + Backspace,General
+10,Comment Line,Ctrl + /,Cmd + /,General
+11,Block Comment,Ctrl + Shift + /,Cmd + Option + /,General
+12,Find,Ctrl + F,Cmd + F,General
+13,Replace,Ctrl + R,Cmd + R,General
+14,Indent/Unindent,Tab / Shift + Tab,Tab / Shift + Tab,General
+15,Search Everywhere,Double Shift,Double Shift,Navigation
+16,Go to Class,Ctrl + N,Cmd + O,Navigation
+17,Go to File,Ctrl + Shift + N,Cmd + Shift + O,Navigation
+18,Go to Symbol,Ctrl + Alt + Shift + N,Cmd + Option + O,Navigation
+19,Recent Files,Ctrl + E,Cmd + E,Navigation
+20,Go to Line,Ctrl + G,Cmd + L,Navigation
+21,Navigate Back/Forward,Ctrl + Alt + Left/Right,Cmd + Option + ← / →,Navigation
+22,Navigate to Declaration,Ctrl + B / Ctrl + Click,Cmd + B / Cmd + Click,Navigation
+23,Navigate to Super Method,Ctrl + U,Cmd + U,Navigation
+24,Open File Structure Popup,Ctrl + F12,Cmd + F12,Navigation
+25,Rename,Shift + F6,Shift + Fn + F6,Refactoring
+26,Extract Method,Ctrl + Alt + M,Cmd + Option + M,Refactoring
+27,Extract Variable,Ctrl + Alt + V,Cmd + Option + V,Refactoring
+28,Inline Variable,Ctrl + Alt + N,Cmd + Option + N,Refactoring
+29,Refactor This,Ctrl + Alt + Shift + T,Ctrl + T,Refactoring
+30,Basic Code Completion,Ctrl + Space,Ctrl + Space,Code Assist
+31,Smart Completion,Ctrl + Shift + Space,Ctrl + Shift + Space,Code Assist
+32,Show Intention Actions,Alt + Enter,Option + Enter,Code Assist
+33,Override Methods,Ctrl + O,Cmd + O,Code Assist
+34,Implement Methods,Ctrl + I,Cmd + I,Code Assist
+35,Generate Code,Alt + Insert,Cmd + N,Code Assist
+36,Debug,Shift + F9,Ctrl + D,Debugging
+37,Step Over,F8,F8,Debugging
+38,Step Into,F7,F7,Debugging
+39,Step Out,Shift + F8,Shift + F8,Debugging
+40,Toggle Breakpoint,Ctrl + F8,Cmd + F8,Debugging
+41,Resume Program,F9,Cmd + Option + R,Debugging
+42,Run,Shift + F10,Control + R,Run/Build
+43,Rebuild Project,Ctrl + F9,Cmd + F9,Run/Build
+44,Run with Coverage,Shift + Ctrl + F10,Ctrl + Cmd + R,Run/Build
+45,Build APK,Build > Build APK,Build > Build APK,Run/Build
+46,Toggle Terminal,Alt + F12,Option + F12,View
+47,Toggle Project Tool,Alt + 1,Cmd + 1,View
+48,Toggle Logcat,Alt + 6,Cmd + 6,View
+49,Toggle TODO Window,Alt + 6,Cmd + 6 or Cmd + 7,View
+50,Toggle Build Tool,Alt + 9,Cmd + 9,View
+51,Commit,Ctrl + K,Cmd + K,Git/SCM
+52,Update Project,Ctrl + T,Cmd + T,Git/SCM
+53,Push Changes,Ctrl + Shift + K,Cmd + Shift + K,Git/SCM
+54,View Version History,Alt + Shift + C,Cmd + Option + C,Git/SCM
+55,Git Log,VCS > Git > Show History,VCS > Git > Show History,Git/SCM

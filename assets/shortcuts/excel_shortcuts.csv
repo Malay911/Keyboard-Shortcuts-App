@@ -1,0 +1,55 @@
+ID,Title,Windows,macOS,Category
+1,Copy,Ctrl + C,Cmd + C,General
+2,Paste,Ctrl + V,Cmd + V,General
+3,Cut,Ctrl + X,Cmd + X,General
+4,Undo,Ctrl + Z,Cmd + Z,General
+5,Redo,Ctrl + Y / Ctrl + Shift + Z,Cmd + Shift + Z,General
+6,Save,Ctrl + S,Cmd + S,General
+7,Open File,Ctrl + O,Cmd + O,General
+8,New Workbook,Ctrl + N,Cmd + N,General
+9,Print,Ctrl + P,Cmd + P,General
+10,Find,Ctrl + F,Cmd + F,General
+11,Replace,Ctrl + H,Cmd + Shift + H,General
+12,Select All,Ctrl + A,Cmd + A,General
+13,Repeat Last Action,F4,Cmd + Y,General
+14,Start a New Line in Cell,Alt + Enter,Ctrl + Option + Return,General
+15,Move to Start of Row,Home,Cmd + Left Arrow,Navigation
+16,Move to Start of Sheet,Ctrl + Home,Fn + Cmd + Left Arrow,Navigation
+17,Move to End of Sheet,Ctrl + End,Fn + Cmd + Right Arrow,Navigation
+18,Move to Next Worksheet,Ctrl + Page Down,Ctrl + Fn + Down Arrow,Navigation
+19,Move to Previous Worksheet,Ctrl + Page Up,Ctrl + Fn + Up Arrow,Navigation
+20,Move to Next Cell,Tab,Tab,Navigation
+21,Move to Previous Cell,Shift + Tab,Shift + Tab,Navigation
+22,Move Down Cell,Enter,Return,Navigation
+23,Move Up Cell,Shift + Enter,Shift + Return,Navigation
+24,Select Column,Ctrl + Space,Cmd + Space,Selection
+25,Select Row,Shift + Space,Shift + Space,Selection
+26,Select Entire Worksheet,Ctrl + A (twice),Cmd + A (twice),Selection
+27,Start Formula,=,=,Formulas
+28,Insert Function,Shift + F3,Shift + F3,Formulas
+29,AutoSum,Alt + =,Cmd + Shift + T,Formulas
+30,Toggle Absolute Reference,F4,Cmd + T,Formulas
+31,Calculate Workbook,F9,Cmd + =,Formulas
+32,Insert Name (Define Name),Ctrl + F3,Cmd + Fn + F3,Formulas
+33,Bold,Ctrl + B,Cmd + B,Formatting
+34,Italic,Ctrl + I,Cmd + I,Formatting
+35,Underline,Ctrl + U,Cmd + U,Formatting
+36,Open Format Cells Dialog,Ctrl + 1,Cmd + 1,Formatting
+37,Add Border,Ctrl + Shift + &,Cmd + Option + 0,Formatting
+38,Center Align,Alt + H + A + C,Cmd + E,Formatting
+39,Left Align,Alt + H + A + L,Cmd + L,Formatting
+40,Right Align,Alt + H + A + R,Cmd + R,Formatting
+41,Wrap Text,Alt + H + W,Cmd + Option + Return,Formatting
+42,Merge Cells,Alt + H + M + C,Cmd + Option + M,Formatting
+43,Insert Table,Ctrl + T,Cmd + T,Data
+44,Insert Chart,Alt + F1,Fn + Option + F1,Data
+45,Sort Ascending,Alt + A + S + A,Cmd + Shift + A,Data
+46,Sort Descending,Alt + A + S + D,Cmd + Shift + D,Data
+47,Filter,Ctrl + Shift + L,Cmd + Shift + F,Data
+48,Insert Row,Ctrl + Shift + +,Ctrl + Shift + K,Data
+49,Delete Row,Ctrl + -,Cmd + -,Data
+50,Switch Between Workbooks,Ctrl + Tab,Cmd + `,Workbook
+51,Minimize Workbook,Ctrl + F9,Cmd + M,Workbook
+52,Maximize Workbook,Ctrl + F10,Cmd + Ctrl + F,Workbook
+53,Close Workbook,Ctrl + W,Cmd + W,Workbook
+54,New Workbook,Ctrl + N,Cmd + N,Workbook

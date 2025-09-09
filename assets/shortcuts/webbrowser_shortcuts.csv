@@ -1,0 +1,40 @@
+ID,Title,Windows,macOS,Category
+1,New Tab,Ctrl + T,Cmd + T,General
+2,Reopen Closed Tab,Ctrl + Shift + T,Cmd + Shift + T,General
+3,Close Tab,Ctrl + W,Cmd + W,General
+4,New Window,Ctrl + N,Cmd + N,General
+5,New Incognito Window,Ctrl + Shift + N,Cmd + Shift + N,General
+6,Print Page,Ctrl + P,Cmd + P,General
+7,Save Page,Ctrl + S,Cmd + S,General
+8,Open File,Ctrl + O,Cmd + O,General
+9,Open Downloads,Ctrl + J,Cmd + Shift + J,General
+10,Open History,Ctrl + H,Cmd + Y (or Cmd + H in Safari),General
+11,Reload Page,Ctrl + R / F5,Cmd + R,Navigation
+12,Hard Reload (Bypass Cache),Ctrl + Shift + R / Ctrl + F5,Cmd + Shift + R,Navigation
+13,Next Tab,Ctrl + Tab / Ctrl + Page Down,Cmd + Option + Right Arrow,Tabs
+14,Previous Tab,Ctrl + Shift + Tab,Cmd + Option + Left Arrow,Tabs
+15,Go to Tab 1–8,Ctrl + 1 to 8,Cmd + 1 to 8,Tabs
+16,Go to Last Tab,Ctrl + 9,Cmd + 9,Tabs
+17,Open Home Page,Alt + Home,Cmd + Shift + H,Navigation
+18,Go Back,Alt + Left Arrow,Cmd + Left Arrow,Navigation
+19,Go Forward,Alt + Right Arrow,Cmd + Right Arrow,Navigation
+20,Stop Loading Page,Esc,Esc,Navigation
+21,Scroll Down (One Screen),Space / Page Down,Space / Fn + Down Arrow,Scrolling
+22,Scroll Up (One Screen),Shift + Space / Page Up,Shift + Space / Fn + Up Arrow,Scrolling
+23,Scroll to Top,Home,Cmd + Up Arrow,Scrolling
+24,Scroll to Bottom,End,Cmd + Down Arrow,Scrolling
+25,Zoom In,Ctrl + +,Cmd + +,View
+26,Zoom Out,Ctrl + -,Cmd + -,View
+27,Reset Zoom,Ctrl + 0,Cmd + 0,View
+28,Fullscreen Mode,F11,Ctrl + Cmd + F,View
+29,Focus Address Bar,Ctrl + L / Alt + D,Cmd + L,Search
+30,Search in Page (Find),Ctrl + F,Cmd + F,Search
+31,Open Search in New Tab,Type & Alt + Enter,Type & Option + Enter,Search
+32,Search from Address Bar,Type + Enter,Type + Return,Search
+33,Open Developer Tools,Ctrl + Shift + I / F12,Cmd + Option + I,Developer
+34,View Page Source,Ctrl + U,Cmd + Option + U,Developer
+35,Toggle Console,Ctrl + Shift + J,Cmd + Option + J,Developer
+36,Bookmark Current Page,Ctrl + D,Cmd + D,Bookmarks
+37,Show Bookmarks Bar,Ctrl + Shift + B,Cmd + Shift + B,Bookmarks
+38,Open Bookmark Manager,Ctrl + Shift + O,Cmd + Option + B,Bookmarks
+39,Open a Bookmark,Alt + Shift + B, then Enter,Cmd + Option + B, then Return,Bookmarks

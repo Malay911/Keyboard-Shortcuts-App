@@ -1,0 +1,52 @@
+ID,Title,Windows,macOS,Category
+1,Copy,Ctrl + C,Cmd + C,General
+2,Paste,Ctrl + V,Cmd + V,General
+3,Cut,Ctrl + X,Cmd + X,General
+4,Undo,Ctrl + Z,Cmd + Z,General
+5,Redo,Ctrl + Y,Cmd + Y,General
+6,Save,Ctrl + S,Cmd + S,General
+7,Open,Ctrl + O,Cmd + O,General
+8,New Document,Ctrl + N,Cmd + N,General
+9,Print,Ctrl + P,Cmd + P,General
+10,Select All,Ctrl + A,Cmd + A,General
+11,Find,Ctrl + F,Cmd + F,General
+12,Replace,Ctrl + H,Cmd + Shift + H,General
+13,Repeat Last Action,F4,Cmd + Y,General
+14,Bold,Ctrl + B,Cmd + B,Formatting
+15,Italic,Ctrl + I,Cmd + I,Formatting
+16,Underline,Ctrl + U,Cmd + U,Formatting
+17,Strikethrough,Ctrl + D > Alt + K,Cmd + Shift + X,Formatting
+18,Superscript,Ctrl + Shift + +,Cmd + Shift + +,Formatting
+19,Subscript,Ctrl + =,Cmd + =,Formatting
+20,Increase Font Size,Ctrl + Shift + >,Cmd + Shift + >,Formatting
+21,Decrease Font Size,Ctrl + Shift + <,Cmd + Shift + <,Formatting
+22,Align Left,Ctrl + L,Cmd + L,Formatting
+23,Align Center,Ctrl + E,Cmd + E,Formatting
+24,Align Right,Ctrl + R,Cmd + R,Formatting
+25,Justify,Ctrl + J,Cmd + J,Formatting
+26,Clear Formatting,Ctrl + Space,Cmd + Space,Formatting
+27,Go to Start of Document,Ctrl + Home,Cmd + Up Arrow,Navigation
+28,Go to End of Document,Ctrl + End,Cmd + Down Arrow,Navigation
+29,Go to Next Word,Ctrl + Right Arrow,Option + Right Arrow,Navigation
+30,Go to Previous Word,Ctrl + Left Arrow,Option + Left Arrow,Navigation
+31,Select to End of Line,Shift + End,Shift + Cmd + Right,Selection
+32,Select to Beginning of Line,Shift + Home,Shift + Cmd + Left,Selection
+33,Select Word by Word,Ctrl + Shift + Arrow,Option + Shift + Arrow,Selection
+34,Page Up / Down,Page Up / Page Down,Fn + Up / Down,Navigation
+35,Create Hyperlink,Ctrl + K,Cmd + K,Document
+36,Insert Page Break,Ctrl + Enter,Cmd + Enter,Document
+37,Insert Comment,Ctrl + Alt + M,Cmd + Option + A,Document
+38,Show/Hide Formatting,Ctrl + Shift + *,Cmd + 8,Document
+39,Open Thesaurus,Shift + F7,Shift + F7,Document
+40,Insert Footnote,Alt + Ctrl + F,Cmd + Option + F,Document
+41,Insert Endnote,Alt + Ctrl + D,Cmd + Option + E,Document
+42,Toggle Full Screen,Alt + V + U,Cmd + Ctrl + F,View
+43,Zoom In/Out,Ctrl + Mouse Wheel,Cmd + Mouse Wheel,View
+44,Show Word Count,Ctrl + Shift + G,Cmd + Shift + G,Review
+45,Accept Track Changes,Ctrl + Shift + E,Cmd + Shift + E,Review
+46,Navigate Comments,Alt + Ctrl + A / C,Cmd + Option + A / C,Review
+47,Insert Row Below,Tab in last cell,Tab in last cell,Table
+48,Insert Column,Right-click > Insert,Right-click > Insert,Table
+49,Navigate Cells,Tab / Shift + Tab,Tab / Shift + Tab,Table
+50,Select Row,Move to left margin > Click,Click in left margin,Table
+51,Select Column,Click top border of column,Click top border,Table

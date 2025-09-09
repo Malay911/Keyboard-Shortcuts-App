@@ -1,0 +1,51 @@
+ID,Title,Windows,MacOS,Category
+1,Open File,Ctrl + O,Cmd + O,Navigation
+2,Find File by Name,Ctrl + Shift + N,Cmd + Shift + O,Navigation
+3,Find in Path,Ctrl + Shift + F,Cmd + Shift + F,Search
+4,Replace in Path,Ctrl + Shift + R,Cmd + Shift + R,Search
+5,Navigate to Class,Ctrl + N,Cmd + N,Navigation
+6,Go to Declaration,Ctrl + B,Cmd + B,Navigation
+7,Go to Line,Ctrl + G,Cmd + L,Navigation
+8,Go to Implementation,Ctrl + Alt + B,Cmd + Alt + B,Navigation
+9,Run,Ctrl + Shift + F10,Ctrl + R,Execution
+10,Debug,Ctrl + Shift + F9,Ctrl + D,Execution
+11,Step Over,F8,F8,Debugging
+12,Step Into,F7,F7,Debugging
+13,Resume Program,F9,Cmd + Opt + R,Debugging
+14,Auto-complete,Ctrl + Space,Ctrl + Space,Code Assist
+15,Smart Completion,Ctrl + Shift + Space,Ctrl + Shift + Space,Code Assist
+16,Reformat Code,Ctrl + Alt + L,Cmd + Opt + L,Code
+17,Optimize Imports,Ctrl + Alt + O,Cmd + Opt + O,Code
+18,Rename Symbol,Shift + F6,Shift + F6,Refactoring
+19,Find Usages,Alt + F7,Opt + F7,Search
+20,Comment Line,Ctrl + /,Cmd + /,Editing
+21,Comment Block,Ctrl + Shift + /,Cmd + Shift + /,Editing
+22,Duplicate Line,Ctrl + D,Cmd + D,Editing
+23,Delete Line,Ctrl + Y,Cmd + Backspace,Editing
+24,Move Line Up,Shift + Alt + Up,Opt + Shift + Up,Editing
+25,Move Line Down,Shift + Alt + Down,Opt + Shift + Down,Editing
+26,Show Terminal,Alt + F12,Opt + F12,View
+27,Toggle Project View,Alt + 1,Cmd + 1,View
+28,Switch Tabs,Alt + Right/Left,Cmd + Opt + Right/Left,Navigation
+29,Recent Files,Ctrl + E,Cmd + E,Navigation
+30,Search Everywhere,Double Shift,Double Shift,Search
+31,Quick Documentation,Ctrl + Q,F1,Help
+32,Show Intention Actions,Alt + Enter,Opt + Enter,Code
+33,Generate Code,Alt + Insert,Cmd + N,Code
+34,Select Word at Caret,Ctrl + W,Opt + Up,Editing
+35,Shrink Selection,Ctrl + Shift + W,Opt + Down,Editing
+36,Refactor This,Ctrl + Alt + Shift + T,Ctrl + T,Refactoring
+37,Open Settings,Ctrl + Alt + S,Cmd + comma,Settings
+38,Build Project,Ctrl + F9,Cmd + F9,Build
+39,Run Context Configuration,Shift + F10,Ctrl + Opt + R,Execution
+40,View Breakpoints,Ctrl + Shift + F8,Cmd + Shift + F8,Debugging
+41,Find Action,Ctrl + Shift + A,Cmd + Shift + A,Search
+42,Navigate Back,Ctrl + Alt + Left,Cmd + Opt + Left,Navigation
+43,Navigate Forward,Ctrl + Alt + Right,Cmd + Opt + Right,Navigation
+44,Toggle Bookmark,F11,F3,Navigation
+45,Go to Bookmark,Ctrl + [0-9],Cmd + [0-9],Navigation
+46,Open Recent Projects,Ctrl + Shift + E,Cmd + Shift + E,Navigation
+47,Focus Editor,Esc,Esc,Navigation
+48,Close Active Tab,Ctrl + F4,Cmd + W,Navigation
+49,Maximize Editor,Ctrl + Shift + F12,Cmd + Shift + F12,View
+50,Next Highlighted Error,F2,F2,Code

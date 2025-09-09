@@ -1,0 +1,51 @@
+ID,Title,macOS,Category
+1,New Tab,Cmd + T,General
+2,Reopen Closed Tab,Cmd + Shift + T,General
+3,Close Tab,Cmd + W,General
+4,New Window,Cmd + N,General
+5,New Private Window,Cmd + Shift + N,General
+6,Close Window,Cmd + Shift + W,General
+7,Open File,Cmd + O,General
+8,Open Location,Cmd + L,General
+9,Open History,Cmd + Y,General
+10,Open Downloads,Option + Cmd + L,General
+11,Print Page,Cmd + P,General
+12,Save Page,Cmd + S,General
+13,Show/Hide Sidebar,Cmd + Shift + L,View
+14,Show/Hide Bookmarks,Cmd + Option + B,Bookmarks
+15,Show/Hide Reading List Sidebar,Cmd + Shift + 2,Bookmarks
+16,Show/Hide History Sidebar,Cmd + Shift + H,View
+17,Go Back,Cmd + ←,Navigation
+18,Go Forward,Cmd + →,Navigation
+19,Reload Page,Cmd + R,Navigation
+20,Reload Without Content Blockers,Option + Cmd + R,Navigation
+21,Stop Loading Page,Esc,Navigation
+22,Search in Page (Find),Cmd + F,Search
+23,Find Next Match,Cmd + G,Search
+24,Find Previous Match,Cmd + Shift + G,Search
+25,Open Page Source,Option + Cmd + U,Developer
+26,Open Web Inspector,Cmd + Option + I,Developer
+27,Open JavaScript Console,Cmd + Option + C,Developer
+28,Enter Full Screen,^ + Cmd + F,View
+29,Zoom In,Cmd + +,View
+30,Zoom Out,Cmd + -,View
+31,Actual Size (Reset Zoom),Cmd + 0,View
+32,Scroll Down (One Screen),Space,Scrolling
+33,Scroll Up (One Screen),Shift + Space,Scrolling
+34,Scroll to Top,Cmd + ↑,Scrolling
+35,Scroll to Bottom,Cmd + ↓,Scrolling
+36,Open Top Sites,Cmd + Option + 1,Navigation
+37,Open Reading List,Cmd + Shift + L,Navigation
+38,Focus Smart Search Field,Cmd + L,Search
+39,Add Bookmark,Cmd + D,Bookmarks
+40,Add Page to Reading List,Shift + Cmd + D,Bookmarks
+41,Open Bookmark in New Tab,Cmd + Click,Bookmarks
+42,Open Link in New Tab,Cmd + Click,Navigation
+43,Open Link in New Window,Shift + Cmd + Click,Navigation
+44,Open Link in New Private Window,Option + Shift + Cmd + Click,Navigation
+45,Move Between Tabs,Ctrl + Tab / Ctrl + Shift + Tab,Tabs
+46,Go to Tab 1–8,Cmd + 1 to 8,Tabs
+47,Go to Last Tab,Cmd + 9,Tabs
+48,Show All Tabs (Tab Overview),Shift + Cmd + \,Tabs
+49,Reopen Last Closed Window,Shift + Cmd + T,General
+50,Quit Safari,Cmd + Q,General

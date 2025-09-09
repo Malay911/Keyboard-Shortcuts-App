@@ -1,0 +1,51 @@
+ID,Title,Windows,MacOS,Category
+1,New File,Ctrl + N,Cmd + N,File
+2,Open File,Ctrl + O,Cmd + O,File
+3,Save File,Ctrl + S,Cmd + S,File
+4,Save As,Ctrl + Shift + S,Cmd + Shift + S,File
+5,Undo,Ctrl + Z,Cmd + Z,Edit
+6,Step Backward,Ctrl + Alt + Z,Cmd + Opt + Z,Edit
+7,Step Forward,Ctrl + Shift + Z,Cmd + Shift + Z,Edit
+8,Cut,Ctrl + X,Cmd + X,Edit
+9,Copy,Ctrl + C,Cmd + C,Edit
+10,Paste,Ctrl + V,Cmd + V,Edit
+11,Free Transform,Ctrl + T,Cmd + T,Edit
+12,Deselect,Ctrl + D,Cmd + D,Select
+13,Select All,Ctrl + A,Cmd + A,Select
+14,Inverse Selection,Ctrl + Shift + I,Cmd + Shift + I,Select
+15,Feather Selection,Shift + F6,Shift + F6,Select
+16,Zoom In,Ctrl + +,Cmd + +,View
+17,Zoom Out,Ctrl + -,Cmd + -,View
+18,Fit on Screen,Ctrl + 0,Cmd + 0,View
+19,Actual Pixels,Ctrl + 1,Cmd + 1,View
+20,Show/Hide Rulers,Ctrl + R,Cmd + R,View
+21,Show/Hide Guides,Ctrl + ;,Cmd + ;,View
+22,Duplicate Layer,Ctrl + J,Cmd + J,Layer
+23,New Layer,Ctrl + Shift + N,Cmd + Shift + N,Layer
+24,Group Layers,Ctrl + G,Cmd + G,Layer
+25,Ungroup Layers,Ctrl + Shift + G,Cmd + Shift + G,Layer
+26,Merge Layers,Ctrl + E,Cmd + E,Layer
+27,Bring to Front,Shift + Ctrl + ],Shift + Cmd + ],Layer
+28,Send to Back,Shift + Ctrl + [,Shift + Cmd + [,Layer
+29,Lock Layer,Ctrl + /,Cmd + /,Layer
+30,Brush Tool,B,B,Tools
+31,Eraser Tool,E,E,Tools
+32,Gradient Tool,G,G,Tools
+33,Clone Stamp Tool,S,S,Tools
+34,Healing Brush Tool,J,J,Tools
+35,Lasso Tool,L,L,Tools
+36,Marquee Tool,M,M,Tools
+37,Move Tool,V,V,Tools
+38,Zoom Tool,Z,Z,Tools
+39,Crop Tool,C,C,Tools
+40,Pen Tool,P,P,Tools
+41,Switch Foreground/Background,X,X,Tools
+42,Default Colors,D,D,Tools
+43,Toggle Screen Modes,F,F,View
+44,Toggle Layer Panel,F7,F7,View
+45,Show/Hide Extras,Ctrl + H,Cmd + H,View
+46,Apply Last Filter,Ctrl + F,Cmd + F,Filter
+47,Fade Last Filter,Shift + Ctrl + F,Shift + Cmd + F,Filter
+48,Open Preferences,Ctrl + K,Cmd + K,File
+49,Toggle Quick Mask,Q,Q,Select
+50,Switch Tools,Shift + Tool Shortcut,Shift + Tool Shortcut,Tools

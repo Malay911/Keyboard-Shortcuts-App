@@ -1,0 +1,51 @@
+ID,Title,Windows,MacOS,Category
+1,Copy,Ctrl + C,Cmd + C,General
+2,Paste,Ctrl + V,Cmd + V,General
+3,Cut,Ctrl + X,Cmd + X,General
+4,Undo,Ctrl + Z,Cmd + Z,General
+5,Redo,Ctrl + Y,Cmd + Y,General
+6,Save,Ctrl + S,Cmd + S,General
+7,Open Presentation,Ctrl + O,Cmd + O,General
+8,New Presentation,Ctrl + N,Cmd + N,General
+9,Print,Ctrl + P,Cmd + P,General
+10,Select All,Ctrl + A,Cmd + A,General
+11,Find,Ctrl + F,Cmd + F,General
+12,Replace,Ctrl + H,Cmd + Shift + H,General
+13,Repeat Last Action,F4,Cmd + Y,General
+14,Bold,Ctrl + B,Cmd + B,Formatting
+15,Italic,Ctrl + I,Cmd + I,Formatting
+16,Underline,Ctrl + U,Cmd + U,Formatting
+17,Increase Font Size,Ctrl + Shift + >,Cmd + Shift + >,Formatting
+18,Decrease Font Size,Ctrl + Shift + <,Cmd + Shift + <,Formatting
+19,Center Text,Ctrl + E,Cmd + E,Formatting
+20,Align Left,Ctrl + L,Cmd + L,Formatting
+21,Align Right,Ctrl + R,Cmd + R,Formatting
+22,Change Case,Shift + F3,Shift + F3,Formatting
+23,New Slide,Ctrl + M,Cmd + Shift + N,Slides
+24,Duplicate Slide,Ctrl + D,Cmd + D,Slides
+25,Delete Slide,Delete (in slide pane),Delete,Slides
+26,Move Slide Up,Ctrl + Up Arrow,Cmd + Up Arrow,Slides
+27,Move Slide Down,Ctrl + Down Arrow,Cmd + Down Arrow,Slides
+28,Go to Slide Number,Ctrl + G or Slide No. + Enter,Slide No. + Return,Slides
+29,Start Slide Show (from beginning),F5,Cmd + Shift + Return,Slides
+30,Start Slide Show (from current slide),Shift + F5,Cmd + Return,Slides
+31,Next Slide / Animation,Right Arrow / Space,Right Arrow / Space,Presentation
+32,Previous Slide,Left Arrow / Backspace,Left Arrow / Delete,Presentation
+33,Black Screen During Show,B,B,Presentation
+34,White Screen During Show,W,W,Presentation
+35,Exit Slide Show,Esc,Esc,Presentation
+36,Show/Hide Pointer,Ctrl + A,Cmd + A,Presentation
+37,Go to First Slide,Home,Home,Presentation
+38,Go to Last Slide,End,End,Presentation
+39,Normal View,Ctrl + 1,Cmd + 1,View
+40,Slide Sorter View,Ctrl + 2,Cmd + 2,View
+41,Reading View,Alt + W + F,Cmd + Option + Return,View
+42,Zoom In,Ctrl + Mouse Wheel Up,Cmd + Mouse Wheel Up,View
+43,Zoom Out,Ctrl + Mouse Wheel Down,Cmd + Mouse Wheel Down,View
+44,Fit Slide to Window,Ctrl + Shift + F,Cmd + Shift + F,View
+45,Group Objects,Ctrl + G,Cmd + G,Object
+46,Ungroup Objects,Ctrl + Shift + G,Cmd + Shift + G,Object
+47,Bring to Front,Ctrl + Shift + ],Cmd + Shift + ],Object
+48,Send to Back,Ctrl + Shift + [,Cmd + Shift + [,Object
+49,Align Center,Alt + Shift + C,Cmd + Option + C,Object
+50,Align Middle,Alt + Shift + M,Cmd + Option + M,Object

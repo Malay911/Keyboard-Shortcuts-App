@@ -1,0 +1,40 @@
+ID,Title,Windows,Category
+1,New Tab,Ctrl + T,General
+2,Reopen Closed Tab,Ctrl + Shift + T,General
+3,Close Tab,Ctrl + W,General
+4,New Window,Ctrl + N,General
+5,New Incognito Window,Ctrl + Shift + N,General
+6,Print Page,Ctrl + P,General
+7,Save Page,Ctrl + S,General
+8,Open File,Ctrl + O,General
+9,Open Downloads,Ctrl + J,General
+10,Open History,Ctrl + H,General
+11,Reload Page,Ctrl + R / F5,Navigation
+12,Hard Reload (Bypass Cache),Ctrl + Shift + R / Ctrl + F5,Navigation
+13,Next Tab,Ctrl + Tab / Ctrl + Page Down,Tabs
+14,Previous Tab,Ctrl + Shift + Tab,Tabs
+15,Go to Tab 1–8,Ctrl + 1 to 8,Tabs
+16,Go to Last Tab,Ctrl + 9,Tabs
+17,Open Home Page,Alt + Home,Navigation
+18,Go Back,Alt + Left Arrow,Navigation
+19,Go Forward,Alt + Right Arrow,Navigation
+20,Stop Loading Page,Esc,Navigation
+21,Scroll Down (One Screen),Space / Page Down,Scrolling
+22,Scroll Up (One Screen),Shift + Space / Page Up,Scrolling
+23,Scroll to Top,Home,Scrolling
+24,Scroll to Bottom,End,Scrolling
+25,Zoom In,Ctrl + +,View
+26,Zoom Out,Ctrl + -,View
+27,Reset Zoom,Ctrl + 0,View
+28,Fullscreen Mode,F11,View
+29,Focus Address Bar,Ctrl + L / Alt + D,Search
+30,Search in Page (Find),Ctrl + F,Search
+31,Open Search in New Tab,Type & Alt + Enter,Search
+32,Search from Address Bar,Type + Enter,Search
+33,Open Developer Tools,Ctrl + Shift + I / F12,Developer
+34,View Page Source,Ctrl + U,Developer
+35,Toggle Console,Ctrl + Shift + J,Developer
+36,Bookmark Current Page,Ctrl + D,Bookmarks
+37,Show Bookmarks Bar,Ctrl + Shift + B,Bookmarks
+38,Open Bookmark Manager,Ctrl + Shift + O,Bookmarks
+39,Open a Bookmark,Alt + Shift + B -> Enter,Bookmarks

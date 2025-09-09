@@ -1,0 +1,41 @@
+ID,Title,Windows,Category
+1,New Tab,Ctrl + T,General
+2,Reopen Closed Tab,Ctrl + Shift + T,General
+3,Close Tab,Ctrl + W,General
+4,New Window,Ctrl + N,General
+5,New InPrivate Window,Ctrl + Shift + N,General
+6,Open Favorites,Ctrl + Shift + O,General
+7,Open Downloads,Ctrl + J,General
+8,Open History,Ctrl + H,General
+9,Print Page,Ctrl + P,General
+10,Save Page,Ctrl + S,General
+11,Reload Page,Ctrl + R / F5,Navigation
+12,Hard Reload (Ignore Cache),Ctrl + Shift + R / Ctrl + F5,Navigation
+13,Next Tab,Ctrl + Tab / Ctrl + Page Down,Tabs
+14,Previous Tab,Ctrl + Shift + Tab,Tabs
+15,Go to Tab 1–8,Ctrl + 1 to 8,Tabs
+16,Go to Last Tab,Ctrl + 9,Tabs
+17,Mute Current Tab,Ctrl + M,General
+18,Duplicate Tab,Ctrl + Shift + K,Tabs
+19,Paste and Search / Go,Ctrl + Shift + L,Search
+20,Locate URL Bar,Ctrl + L / Alt + D,Address Bar
+21,Toggle DevTools,Ctrl + Shift + I / F12,Developer
+22,View Page Source,Ctrl + U,Developer
+23,Open Collections,Ctrl + Shift + Y,General
+24,Paste Without Formatting,Ctrl + Shift + V,General
+25,Show or Hide Favorites Bar,Ctrl + Shift + B,Bookmarks
+26,Select URL in Address Bar,Ctrl + F4,General
+27,Read Aloud / Immersive Reader,F9,General
+28,Fullscreen Mode,F11,View
+29,Stop Loading / Close Popup,Esc,Navigation
+30,Scroll Down One Page,Space / Page Down,Scrolling
+31,Scroll Up One Page,Shift + Space / Page Up,Scrolling
+32,Scroll to Top,Home,Scrolling
+33,Scroll to Bottom,End,Scrolling
+34,Zoom In,Ctrl + +,View
+35,Zoom Out,Ctrl + -,View
+36,Reset Zoom Level,Ctrl + 0,View
+37,Open Clear Browsing Data,Ctrl + Shift + Delete,General
+38,Open Settings & More,Alt + F,General
+39,Focus Toolbar First Item,Alt + Shift + T,General
+40,Switch Focus Pane,F6,Navigation

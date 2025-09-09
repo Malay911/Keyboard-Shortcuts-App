@@ -1,0 +1,48 @@
+ID,Title,Keys,Description,Category
+1,Copy,Ctrl + C,Copy selected text or file,General
+2,Paste,Ctrl + V,Paste copied content,General
+3,Cut,Ctrl + X,Cut selected content,General
+4,Undo,Ctrl + Z,Undo last action,General
+5,Redo,Ctrl + Shift + Z,Redo last undone action,General
+6,Select All,Ctrl + A,Select all items or text,General
+7,Save,Ctrl + S,Save current document,General
+8,Open File,Ctrl + O,Open a file,General
+9,Print,Ctrl + P,Print current page,General
+10,New Document,Ctrl + N,Create a new file,General
+11,Close Window,Ctrl + W,Close current tab/window,General
+12,Find,Ctrl + F,Find content in document,General
+13,Replace,Ctrl + H,Replace content,General
+14,Open Terminal,Ctrl + Alt + T,Open terminal window,General
+15,Switch Windows,Alt + Tab,Toggle between open windows,Window Management
+16,Close Current Window,Alt + F4,Close the active window,Window Management
+17,Minimize Window,Super + H,Minimize the current window,Window Management
+18,Maximize Window,Super + ↑,Maximize window size,Window Management
+19,Restore Window,Super + ↓,Restore from maximized/minimized,Window Management
+20,Snap Left,Super + ←,Align window to the left,Window Management
+21,Snap Right,Super + →,Align window to the right,Window Management
+22,Switch Workspaces,Ctrl + Alt + ← / →,Navigate between workspaces,Window Management
+23,Show Workspaces Overview,Super + S,Show all workspaces,Window Management
+24,Show Desktop,Ctrl + Super + D,Minimize all windows to show desktop,Window Management
+25,Open Activities Overview,Super,Open overview of running apps/workspaces,Window Management
+26,Open File Manager,Super + E,Launch the default file manager,File Explorer
+27,Rename File/Folder,F2,Rename selected file or folder,File Explorer
+28,Delete (Move to Trash),Delete,Move selected item to trash,File Explorer
+29,Permanent Delete,Shift + Delete,Delete without moving to trash,File Explorer
+30,New Folder,Ctrl + Shift + N,Create a new folder,File Explorer
+31,Search,Ctrl + F,Search within file manager,File Explorer
+32,Show File Properties,Alt + Enter,View file/folder details,File Explorer
+33,Go to Parent Folder,Alt + ↑,Navigate to parent directory,File Explorer
+34,Refresh Folder,F5,Refresh current folder view,File Explorer
+35,Toggle Hidden Files,Ctrl + H,Show/hide hidden files,File Explorer
+36,Toggle Screen Reader (Orca),Alt + Super + S,Enable/disable Orca screen reader,Accessibility
+37,Zoom In (Magnifier),Alt + Super + =,Magnify screen view,Accessibility
+38,Zoom Out,Alt + Super + -,Decrease magnifier zoom,Accessibility
+39,High Contrast Mode,Super + Ctrl + H,Enable high contrast theme,Accessibility
+40,On-Screen Keyboard,Settings > Accessibility,Enable virtual keyboard,Accessibility
+41,Open Accessibility Settings,Settings → Accessibility,Open accessibility preferences,Accessibility
+42,Screenshot Full Screen,PrtScn,Capture the entire screen,Screenshot & Recording
+43,Screenshot of Window,Alt + PrtScn,Capture the current window,Screenshot & Recording
+44,Screenshot of Selected Area,Shift + PrtScn,Capture selected screen area,Screenshot & Recording
+45,Launch Screenshot Tool,Shift + Ctrl + PrtScn,Open screenshot options,Screenshot & Recording
+46,Start Screen Recording,Ctrl + Alt + Shift + R,Begin screen recording,Screenshot & Recording
+47,Stop Recording,Ctrl + Alt + Shift + R,Stop ongoing screen recording,Screenshot & Recording

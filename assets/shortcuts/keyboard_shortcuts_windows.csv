@@ -1,0 +1,87 @@
+ID,Title,Keys,Description,Category
+1,Copy,Ctrl + C,Copy selected item/text,General
+2,Paste,Ctrl + V,Paste copied/cut content,General
+3,Cut,Ctrl + X,Remove and copy content,General
+4,Undo,Ctrl + Z,Revert last action,General
+5,Redo,Ctrl + Y,Redo the last undone action,General
+6,Select All,Ctrl + A,Select all content,General
+7,Save,Ctrl + S,Save the current document,General
+8,Open File,Ctrl + O,Open a file,General
+9,Print,Ctrl + P,Print current document,General
+10,New Document,Ctrl + N,Create new file/document,General
+11,Close Window,Ctrl + W,Close current window/tab,General
+12,Find,Ctrl + F,Find within the document,General
+13,Replace,Ctrl + H,Find and replace text,General
+14,Start Menu,Ctrl + Esc,Open Start menu,General
+15,Show Properties,Alt + Enter,Show file/folder properties,General
+16,Rename,F2,Rename selected file/folder,General
+17,Refresh,F5,Refresh the current view,General
+18,Help,F1,Open help/documentation,General
+19,Delete to Recycle Bin,Ctrl + D,Move item to Recycle Bin,General
+20,Permanent Delete,Shift + Delete,Delete without sending to Recycle Bin,General
+21,Task Manager,Ctrl + Shift + Esc,Open Task Manager,General
+22,New Folder,Ctrl + Shift + N,Create a new folder,General
+23,Switch Windows,Alt + Tab,Switch between open apps,Window Management
+24,Close Current Window,Alt + F4,Close active window,Window Management
+25,Minimize Window,Win + Down Arrow,Minimize current window,Window Management
+26,Maximize Window,Win + Up Arrow,Maximize current window,Window Management
+27,Snap Left,Win + Left Arrow,Snap window to left half,Window Management
+28,Snap Right,Win + Right Arrow,Snap window to right half,Window Management
+29,Restore Window,Win + Down Arrow (again),Restore from maximized,Window Management
+30,Minimize All,Win + M,Minimize all windows,Window Management
+31,Show Desktop,Win + D,Toggle desktop view,Window Management
+32,Restore Minimized Windows,Win + Shift + M,Restore all minimized windows,Window Management
+33,Task View,Win + Tab,Show all open windows,Window Management
+34,Cycle Windows (Old Style),Alt + Esc,Switch windows in opened order,Window Management
+35,Move Window (Menu),Alt + Space → M,Move window using keyboard,Window Management
+36,Resize Window (Menu),Alt + Space → S,Resize window using keyboard,Window Management
+37,Close with Menu,Alt + Space → C,Close window from menu,Window Management
+38,Show Window Menu,Alt + Space,Show window control menu,Window Management
+39,Open Action Center,Win + A,Open notification center,Window Management
+40,Open Quick Settings,Win + K,Open wireless/projection panel,Window Management
+41,Open Notification Panel,Win + N,View notifications,Window Management
+42,Switch Desktops,Win + Ctrl + ←/→,Move between virtual desktops,Window Management
+43,Open File Explorer,Win + E,Launch File Explorer,File Explorer
+44,Delete,Delete,Delete selected item,File Explorer
+45,Go Back,Alt + Left Arrow,Go back to previous folder,File Explorer
+46,Go Forward,Alt + Right Arrow,Go forward in folder history,File Explorer
+47,Go to Parent Folder,Alt + Up Arrow,Move to parent directory,File Explorer
+48,Navigation Pane Toggle,Ctrl + Shift + E,Show/hide navigation pane,File Explorer
+49,Focus on Search Bar,Ctrl + E,Focus search input,File Explorer
+50,Toggle Preview Pane,Alt + P,Show/hide preview pane,File Explorer
+51,Show File Menu,Alt,Show classic file menu,File Explorer
+52,Open Context Menu,Shift + F10,Right-click context menu,File Explorer
+53,Move File,Drag + Right Click,Move file with options,File Explorer
+54,Open Magnifier,Win + Plus,Zoom into screen,Accessibility
+55,Zoom Out in Magnifier,Win + Minus,Zoom out in magnifier,Accessibility
+56,Toggle Magnifier,Win + Esc,Close magnifier,Accessibility
+57,Open Narrator,Ctrl + Win + Enter,Start screen reader,Accessibility
+58,Toggle High Contrast Mode,Left Alt + Shift + PrtScn,Switch contrast mode,Accessibility
+59,Turn Filter Keys On/Off,Right Shift (hold),Enable key filtering,Accessibility
+60,Toggle Sticky Keys,Shift (press 5 times),Enable Sticky Keys,Accessibility
+61,Open On-Screen Keyboard,Win + Ctrl + O,Show virtual keyboard,Accessibility
+62,Toggle Color Filters,Win + Ctrl + C,Enable screen filters,Accessibility
+63,Open Ease of Access Center,Win + U,Open accessibility center,Accessibility
+64,Narrator Settings,Ctrl + Win + N,Change narrator settings,Accessibility
+65,Read Active Window in Narrator,Caps Lock + W,Read active window aloud,Accessibility
+66,Start Dictation,Win + H,Start voice typing,Accessibility
+67,Toggle Screen Reader on Login,Ctrl + Win + Enter,Enable narrator at login,Accessibility
+68,Open pinned app (1–9),Win + 1–9,Launch pinned taskbar app,Taskbar
+69,Open last active window,Win + Shift + 1–9,Reopen app window,Taskbar
+70,Right-click app,Shift + Right Click,Open app’s right-click menu,Taskbar
+71,Cycle through apps,Win + T,Navigate taskbar items,Taskbar
+72,Show hidden icons,Win + B,Focus on system tray icons,Taskbar
+73,Open Jump List,Right Click on pinned app,Show recent/jump list,Taskbar
+74,Launch new instance,Shift + Click taskbar app,Open another app instance,Taskbar
+75,Open Taskbar Settings,Right Click Taskbar → Settings,Change taskbar preferences,Taskbar
+76,Show Desktop (via Taskbar),Click bottom-right corner,Instantly show desktop,Taskbar
+77,Peek at Desktop,"Win + ,",Temporary desktop view,Taskbar
+78,Open action center,Win + A,Notification & quick actions,Taskbar
+79,Full Screenshot,PrtScn,Capture full screen,Screenshot & Recording
+80,Active Window Screenshot,Alt + PrtScn,Screenshot active window,Screenshot & Recording
+81,Screenshot & Save,Win + PrtScn,Screenshot & auto save,Screenshot & Recording
+82,Open Snip & Sketch,Win + Shift + S,Snip screen area,Screenshot & Recording
+83,Launch Snipping Tool,Win + Shift + S,Launch Snip Tool (redundant entry),Screenshot & Recording
+84,Start/Stop Screen Recording,Win + Alt + R,Record screen using Game Bar,Screenshot & Recording
+85,Toggle Mic Recording,Win + Alt + M,Mute/unmute mic while recording,Screenshot & Recording
+86,Take Game Bar Screenshot,Win + Alt + PrtScn,Capture via Game Bar,Screenshot & Recording

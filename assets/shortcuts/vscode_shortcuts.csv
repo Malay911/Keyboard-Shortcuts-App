@@ -1,0 +1,51 @@
+ID,Title,Windows,MacOS,Category
+1,Copy,Ctrl + C,Cmd + C,General
+2,Paste,Ctrl + V,Cmd + V,General
+3,Cut,Ctrl + X,Cmd + X,General
+4,Undo,Ctrl + Z,Cmd + Z,General
+5,Redo,Ctrl + Y / Ctrl + Shift + Z,Cmd + Shift + Z,General
+6,Select All,Ctrl + A,Cmd + A,General
+7,Save File,Ctrl + S,Cmd + S,General
+8,Save All Files,Ctrl + K S,Cmd + Option + S,General
+9,Open File,Ctrl + O,Cmd + O,General
+10,New File,Ctrl + N,Cmd + N,General
+11,Close Editor,Ctrl + W,Cmd + W,General
+12,Find,Ctrl + F,Cmd + F,General
+13,Replace,Ctrl + H,Cmd + Option + F,General
+14,Duplicate Line,Shift + Alt + Down,Shift + Option + Down,General
+15,Delete Line,Ctrl + Shift + K,Cmd + Shift + K,General
+16,Move Line Up,Alt + Up Arrow,Option + Up Arrow,General
+17,Move Line Down,Alt + Down Arrow,Option + Down Arrow,General
+18,Command Palette,Ctrl + Shift + P,Cmd + Shift + P,Navigation
+19,Quick Open (File Search),Ctrl + P,Cmd + P,Navigation
+20,Go to Line,Ctrl + G,Cmd + G,Navigation
+21,Go to Symbol,Ctrl + Shift + O,Cmd + Shift + O,Navigation
+22,Peek Definition,Alt + F12,Option + F12,Navigation
+23,Go to Definition,F12,F12,Navigation
+24,Go to Implementation,Ctrl + F12,Cmd + F12,Navigation
+25,Go Back,Ctrl + Alt + Left Arrow,Ctrl + Cmd + Left Arrow,Navigation
+27,Toggle Terminal,Ctrl + `,Cmd + `,View
+28,Toggle Sidebar,Ctrl + B,Cmd + B,View
+29,Split Editor,Ctrl + \,Cmd + \,View
+30,Focus Next Editor Group,Ctrl + 1 / 2 / 3,Cmd + 1 / 2 / 3,View
+31,Toggle Full Screen,F11,Cmd + Ctrl + F,View
+32,Zen Mode,Ctrl + K Z,Cmd + K Z,View
+33,Explorer View,Ctrl + Shift + E,Cmd + Shift + E,View
+34,Source Control View,Ctrl + Shift + G,Cmd + Shift + G,View
+35,Extensions View,Ctrl + Shift + X,Cmd + Shift + X,View
+36,Debug View,Ctrl + Shift + D,Cmd + Shift + D,View
+37,Format Document,Shift + Alt + F,Shift + Option + F,Formatting
+38,Rename Symbol,F2,F2,Refactoring
+39,Comment Line,Ctrl + /,Cmd + /,Formatting
+40,Block Comment,Shift + Alt + A,Shift + Option + A,Formatting
+41,Show Problems Panel,Ctrl + Shift + M,Cmd + Shift + M,Debugging
+42,Start/Continue Debugging,F5,—,Debugging
+43,Step Into,F11,—,Debugging
+44,Step Over,F10,—,Debugging
+45,Step Out,Shift + F11,—,Debugging
+46,Toggle Breakpoint,F9,—,Debugging
+47,Run Without Debugging,Ctrl + F5,—,Debugging
+48,Create New Terminal,Ctrl + Shift + `,—,Terminal
+49,Kill Terminal,Ctrl + Shift + W,—,Terminal
+50,Clear Terminal,Ctrl + K,—,Terminal
+51,Switch Terminal Tabs,Ctrl + PgUp/PgDn,—,Terminal
