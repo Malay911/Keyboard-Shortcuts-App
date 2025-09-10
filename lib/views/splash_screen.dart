@@ -127,108 +127,84 @@ class _SplashScreenState extends State<SplashScreen>
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: isDarkMode
-                ? [
-              AppTheme.darkBackground,
-              AppTheme.darkSurface,
-              AppTheme.darkSurfaceVariant,
-            ]
-                : [
-              AppTheme.primaryColor,
-              AppTheme.primaryLight,
-              AppTheme.lightBackground,
-            ],
-          ),
-        ),
-        child: SafeArea(
-          child: Column(
-            children: [
-              Expanded(
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      AnimatedBuilder(
-                        animation: Listenable.merge([
-                          _logoController,
-                          _pulseController,
-                        ]),
-                        builder: (context, child) {
-                          return Transform.scale(
-                            scale: _logoScaleAnimation.value *
-                                _pulseAnimation.value,
-                            child: Opacity(
-                              opacity: _logoOpacityAnimation.value,
-                              child: _buildAppLogo(isDarkMode),
-                            ),
-                          );
-                        },
-                      ),
-
-                      const SizedBox(height: 40),
-
-                      AnimatedBuilder(
-                        animation: _textController,
-                        builder: (context, child) {
-                          return SlideTransition(
-                            position: _textSlideAnimation,
-                            child: Opacity(
-                              opacity: _textOpacityAnimation.value,
-                              child: _buildAppTitle(isDarkMode),
-                            ),
-                          );
-                        },
-                      ),
-                    ],
-                  ),
+      body: Column(
+        children: [
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: isDarkMode
+                      ? [
+                          AppTheme.darkBackground,
+                          AppTheme.darkSurface,
+                          AppTheme.darkSurfaceVariant,
+                        ]
+                      : [
+                          AppTheme.primaryColor,
+                          AppTheme.primaryLight,
+                          AppTheme.lightBackground,
+                        ],
                 ),
               ),
-              Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 20),
-                    child: AnimatedBuilder(
-                      animation: _progressController,
-                      builder: (context, child) {
-                        return _buildProgressSection(isDarkMode);
-                      },
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          flex: 1,
-                          child: _buildPoweredByLogo(
-                            'assets/images/ASWDC.jpg',
-                            height: 70,
-                            isDarkMode: isDarkMode,
-                          ),
+              child: SafeArea(
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            AnimatedBuilder(
+                              animation: Listenable.merge([
+                                _logoController,
+                                _pulseController,
+                              ]),
+                              builder: (context, child) {
+                                return Transform.scale(
+                                  scale: _logoScaleAnimation.value *
+                                      _pulseAnimation.value,
+                                  child: Opacity(
+                                    opacity: _logoOpacityAnimation.value,
+                                    child: _buildAppLogo(isDarkMode),
+                                  ),
+                                );
+                              },
+                            ),
+                            const SizedBox(height: 40),
+                            AnimatedBuilder(
+                              animation: _textController,
+                              builder: (context, child) {
+                                return SlideTransition(
+                                  position: _textSlideAnimation,
+                                  child: Opacity(
+                                    opacity: _textOpacityAnimation.value,
+                                    child: _buildAppTitle(isDarkMode),
+                                  ),
+                                );
+                              },
+                            ),
+                          ],
                         ),
-                        const SizedBox(width: 16),
-                        Expanded(
-                          flex: 2,
-                          child: _buildPoweredByLogo(
-                            'assets/images/darshan_logo.png',
-                            height: 70,
-                            isDarkMode: isDarkMode,
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 20),
-                ],
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: AnimatedBuilder(
+                        animation: _progressController,
+                        builder: (context, child) {
+                          return _buildProgressSection(isDarkMode);
+                        },
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ],
+            ),
           ),
-        ),
+          _buildBottomLogoSection(),
+        ],
       ),
     );
   }
@@ -237,7 +213,6 @@ class _SplashScreenState extends State<SplashScreen>
     return Stack(
       alignment: Alignment.center,
       children: [
-        // Outer glow
         Container(
           width: 160,
           height: 160,
@@ -246,17 +221,16 @@ class _SplashScreenState extends State<SplashScreen>
             gradient: RadialGradient(
               colors: isDarkMode
                   ? [
-                AppTheme.primaryColor.withOpacity(0.2),
-                Colors.transparent,
-              ]
+                      AppTheme.primaryColor.withOpacity(0.2),
+                      Colors.transparent,
+                    ]
                   : [
-                Colors.white.withOpacity(0.2),
-                Colors.transparent,
-              ],
+                      Colors.white.withOpacity(0.2),
+                      Colors.transparent,
+                    ],
             ),
           ),
         ),
-        // Logo container
         Container(
           width: 140,
           height: 140,
@@ -268,13 +242,13 @@ class _SplashScreenState extends State<SplashScreen>
               end: Alignment.bottomRight,
               colors: isDarkMode
                   ? [
-                AppTheme.darkSurface.withOpacity(0.9),
-                AppTheme.darkSurface,
-              ]
+                      AppTheme.darkSurface.withOpacity(0.9),
+                      AppTheme.darkSurface,
+                    ]
                   : [
-                Colors.white.withOpacity(0.95),
-                Colors.white.withOpacity(0.9),
-              ],
+                      Colors.white.withOpacity(0.95),
+                      Colors.white.withOpacity(0.9),
+                    ],
             ),
             boxShadow: [
               BoxShadow(
@@ -285,7 +259,7 @@ class _SplashScreenState extends State<SplashScreen>
               ),
               BoxShadow(
                 color:
-                (isDarkMode ? Colors.black : Colors.white).withOpacity(0.1),
+                    (isDarkMode ? Colors.black : Colors.white).withOpacity(0.1),
                 blurRadius: 40,
                 spreadRadius: -10,
               ),
@@ -296,7 +270,6 @@ class _SplashScreenState extends State<SplashScreen>
             fit: BoxFit.contain,
           ),
         ),
-        // Animated ring
         AnimatedBuilder(
           animation: _pulseController,
           builder: (context, child) {
@@ -328,13 +301,13 @@ class _SplashScreenState extends State<SplashScreen>
           shaderCallback: (bounds) => LinearGradient(
             colors: isDarkMode
                 ? [
-              AppTheme.primaryColor,
-              AppTheme.primaryLight,
-            ]
+                    AppTheme.primaryColor,
+                    AppTheme.primaryLight,
+                  ]
                 : [
-              Colors.white,
-              Colors.white.withOpacity(0.8),
-            ],
+                    Colors.white,
+                    Colors.white.withOpacity(0.8),
+                  ],
           ).createShader(bounds),
           child: Text(
             StringConstants.appTitle,
@@ -356,7 +329,7 @@ class _SplashScreenState extends State<SplashScreen>
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
               color:
-              (isDarkMode ? Colors.white : Colors.white).withOpacity(0.2),
+                  (isDarkMode ? Colors.white : Colors.white).withOpacity(0.2),
             ),
           ),
           child: Text(
@@ -441,26 +414,36 @@ class _SplashScreenState extends State<SplashScreen>
     );
   }
 
-  Widget _buildPoweredByLogo(
-      String assetPath, {
-        required double height,
-        required bool isDarkMode,
-      }) {
+  Widget _buildBottomLogoSection() {
     return Container(
       width: double.infinity,
-      height: height,
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: (isDarkMode ? Colors.white : Colors.white).withOpacity(0.1),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-          color: (isDarkMode ? Colors.white : Colors.white).withOpacity(0.2),
-        ),
-      ),
-      child: Image.asset(
-        assetPath,
-        height: height - 12,
-        fit: BoxFit.contain,
+      height: 80,
+      color: Colors.white,
+      child: Row(
+        children: [
+          Expanded(
+            flex: 1,
+            child: Container(
+              height: 80,
+              padding: const EdgeInsets.all(16),
+              child: Image.asset(
+                'assets/images/ASWDC.jpg',
+                fit: BoxFit.contain,
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              height: 80,
+              padding: const EdgeInsets.all(16),
+              child: Image.asset(
+                'assets/images/darshan_logo2.png',
+                fit: BoxFit.contain,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

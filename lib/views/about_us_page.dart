@@ -137,7 +137,7 @@ class AboutUsPage extends StatelessWidget {
                     ],
                   ),
                   child: Image.asset(
-                    'assets/images/darshan_logo.png',
+                    'assets/images/darshan_logo2.png',
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -562,7 +562,7 @@ class AboutUsPage extends StatelessWidget {
                   const SizedBox(height: 20),
                   Container(
                     width: size.width,
-                    margin: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+                    margin: const EdgeInsets.fromLTRB(0, 0, 0, 20),
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
                       color: isDarkMode
