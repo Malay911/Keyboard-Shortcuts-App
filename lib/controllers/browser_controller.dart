@@ -1,9 +1,4 @@
 import 'dart:io';
-// import 'package:get/get.dart';
-// import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-// import '../models/app_model.dart';
-// import '../models/category_model.dart';
 import '../utils/import_exports.dart';
 
 class BrowserController extends GetxController {
@@ -16,7 +11,6 @@ class BrowserController extends GetxController {
     loadBrowsers();
   }
 
-  /// Load supported browsers
   void loadBrowsers() {
     final browsersList = [
       AppModel(
@@ -44,7 +38,6 @@ class BrowserController extends GetxController {
     browsers.assignAll(browsersList);
   }
 
-  /// Fetch all categories for a given browser
   Future<List<CategoryModel>> getBrowserCategories(
       String browserName, String osType) async {
     try {
@@ -72,7 +65,6 @@ class BrowserController extends GetxController {
     }
   }
 
-  /// Assign icons based on category names
   IconData getCategoryIcon(String category) {
     switch (category.toLowerCase()) {
       case 'general':
@@ -106,7 +98,6 @@ class BrowserController extends GetxController {
     }
   }
 
-  /// Navigate to browser category page
   void navigateToCategoryPage(String browserName) {
     final osType = Platform.isMacOS ? 'mac' : 'windows';
 
@@ -120,7 +111,6 @@ class BrowserController extends GetxController {
     );
   }
   
-  /// Get SVG icon path for category
   String? getCategorySvgIconPath(String categoryName) {
     switch (categoryName.toLowerCase()) {
       case 'general':
@@ -139,9 +129,8 @@ class BrowserController extends GetxController {
         return 'assets/icons/category-scrolling.svg';
       case 'view':
         return 'assets/icons/category-view.svg';
-      // Add more category SVG icons as they become available
       default:
-        return null; // Fall back to IconData if no SVG is available
+        return null;
     }
   }
 }

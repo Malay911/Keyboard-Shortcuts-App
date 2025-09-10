@@ -1,5 +1,4 @@
 import 'package:keyboard_shortcuts_app/utils/import_exports.dart';
-import 'package:keyboard_shortcuts_app/widgets/app_drawer.dart';
 
 class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);
@@ -7,7 +6,7 @@ class HomePage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
-    final themeController = Get.find<ThemeController>();
+    // final themeController = Get.find<ThemeController>();
 
     return GestureDetector(
       onTap: () {

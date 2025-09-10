@@ -1,153 +1,6 @@
-// import 'package:flutter/material.dart';
-
-// class AppTheme {
-//   static const Color primaryColor = Color(0xFF2563EB);
-//   static const Color secondaryColor = Color(0xFFF59E0B);
-//   static const Color accentColor = Color(0xFF34D399);
-
-//   static const Color lightBackground = Color(0xFFFAFAFA);
-//   static const Color lightSurface = Color(0xFFF9FAFB);
-//   static const Color lightPrimaryText = Color(0xFF111827);
-//   static const Color lightSecondaryText = Color(0xFF4B5563);
-//   static const Color lightDivider = Color(0xFFE5E7EB);
-
-//   static const Color darkBackground = Color(0xFF111827);
-//   static const Color darkSurface = Color(0xFF1F2937);
-//   static const Color darkPrimaryText = Color(0xFFF9FAFB);
-//   static const Color darkSecondaryText = Color(0xFFD1D5DB);
-//   static const Color darkDivider = Color(0xFF374151);
-
-//   static ThemeData lightTheme = ThemeData(
-//     brightness: Brightness.light,
-//     primaryColor: primaryColor,
-//     colorScheme: ColorScheme.light(
-//       primary: primaryColor,
-//       secondary: secondaryColor,
-//       tertiary: accentColor,
-//       background: lightBackground,
-//       surface: lightSurface,
-//       onPrimary: Colors.white,
-//       onSecondary: lightPrimaryText,
-//       onBackground: lightPrimaryText,
-//       onSurface: lightPrimaryText,
-//     ),
-//     scaffoldBackgroundColor: lightBackground,
-//     cardColor: lightSurface,
-//     cardTheme: CardTheme(
-//       elevation: 2,
-//       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-//     ),
-//     dividerColor: lightDivider,
-//     textTheme: TextTheme(
-//       bodyLarge: TextStyle(color: lightPrimaryText),
-//       bodyMedium: TextStyle(color: lightPrimaryText),
-//       bodySmall: TextStyle(color: lightSecondaryText),
-//       displayLarge:
-//           TextStyle(color: lightPrimaryText, fontWeight: FontWeight.bold),
-//       displayMedium:
-//           TextStyle(color: lightPrimaryText, fontWeight: FontWeight.bold),
-//       displaySmall:
-//           TextStyle(color: lightPrimaryText, fontWeight: FontWeight.bold),
-//       titleLarge:
-//           TextStyle(color: lightPrimaryText, fontWeight: FontWeight.bold),
-//       titleMedium: TextStyle(color: lightPrimaryText),
-//       titleSmall: TextStyle(color: lightPrimaryText),
-//     ),
-//     iconTheme: IconThemeData(
-//       color: primaryColor,
-//     ),
-//     appBarTheme: AppBarTheme(
-//       backgroundColor: primaryColor,
-//       foregroundColor: Colors.white,
-//       elevation: 0,
-//     ),
-//     tabBarTheme: TabBarTheme(
-//       labelColor: primaryColor,
-//       unselectedLabelColor: lightSecondaryText,
-//       indicatorColor: secondaryColor,
-//       labelStyle: TextStyle(fontWeight: FontWeight.bold),
-//       unselectedLabelStyle: TextStyle(fontWeight: FontWeight.normal),
-//     ),
-//     elevatedButtonTheme: ElevatedButtonThemeData(
-//       style: ElevatedButton.styleFrom(
-//         backgroundColor: primaryColor,
-//         foregroundColor: Colors.white,
-//         shape: RoundedRectangleBorder(
-//           borderRadius: BorderRadius.circular(8),
-//         ),
-//         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-//       ),
-//     ),
-//   );
-
-//   static ThemeData darkTheme = ThemeData(
-//     brightness: Brightness.dark,
-//     primaryColor: primaryColor,
-//     colorScheme: ColorScheme.dark(
-//       primary: primaryColor,
-//       secondary: secondaryColor,
-//       tertiary: accentColor,
-//       background: darkBackground,
-//       surface: darkSurface,
-//       onPrimary: Colors.white,
-//       onSecondary: darkPrimaryText,
-//       onBackground: darkPrimaryText,
-//       onSurface: darkPrimaryText,
-//     ),
-//     scaffoldBackgroundColor: darkBackground,
-//     cardColor: darkSurface,
-//     cardTheme: CardTheme(
-//       elevation: 4,
-//       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-//     ),
-//     dividerColor: darkDivider,
-//     textTheme: TextTheme(
-//       bodyLarge: TextStyle(color: darkPrimaryText),
-//       bodyMedium: TextStyle(color: darkPrimaryText),
-//       bodySmall: TextStyle(color: darkSecondaryText),
-//       displayLarge:
-//           TextStyle(color: darkPrimaryText, fontWeight: FontWeight.bold),
-//       displayMedium:
-//           TextStyle(color: darkPrimaryText, fontWeight: FontWeight.bold),
-//       displaySmall:
-//           TextStyle(color: darkPrimaryText, fontWeight: FontWeight.bold),
-//       titleLarge:
-//           TextStyle(color: darkPrimaryText, fontWeight: FontWeight.bold),
-//       titleMedium: TextStyle(color: darkPrimaryText),
-//       titleSmall: TextStyle(color: darkPrimaryText),
-//     ),
-//     iconTheme: IconThemeData(
-//       color: primaryColor,
-//     ),
-//     appBarTheme: AppBarTheme(
-//       backgroundColor: darkSurface,
-//       foregroundColor: darkPrimaryText,
-//       elevation: 0,
-//     ),
-//     tabBarTheme: TabBarTheme(
-//       labelColor: primaryColor,
-//       unselectedLabelColor: darkSecondaryText,
-//       indicatorColor: secondaryColor,
-//       labelStyle: TextStyle(fontWeight: FontWeight.bold),
-//       unselectedLabelStyle: TextStyle(fontWeight: FontWeight.normal),
-//     ),
-//     elevatedButtonTheme: ElevatedButtonThemeData(
-//       style: ElevatedButton.styleFrom(
-//         backgroundColor: primaryColor,
-//         foregroundColor: Colors.white,
-//         shape: RoundedRectangleBorder(
-//           borderRadius: BorderRadius.circular(8),
-//         ),
-//         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-//       ),
-//     ),
-//   );
-// }
-
-import 'package:flutter/material.dart';
+import '../utils/import_exports.dart';
 
 class AppTheme {
-  // Enhanced Color Palette
   static const Color primaryColor = Color(0xFF2563EB);
   static const Color primaryLight = Color(0xFF3B82F6);
   static const Color primaryDark = Color(0xFF1D4ED8);
@@ -160,13 +13,11 @@ class AppTheme {
   static const Color accentLight = Color(0xFF6EE7B7);
   static const Color accentDark = Color(0xFF10B981);
 
-  // Success, Warning, Error colors
   static const Color successColor = Color(0xFF10B981);
   static const Color warningColor = Color(0xFFF59E0B);
   static const Color errorColor = Color(0xFFEF4444);
   static const Color infoColor = Color(0xFF3B82F6);
 
-  // Light Theme Colors
   static const Color lightBackground = Color(0xFFFAFAFA);
   static const Color lightSurface = Color(0xFFFFFFFF);
   static const Color lightSurfaceVariant = Color(0xFFF8FAFC);
@@ -176,7 +27,6 @@ class AppTheme {
   static const Color lightDivider = Color(0xFFE2E8F0);
   static const Color lightBorder = Color(0xFFCBD5E1);
 
-  // Dark Theme Colors
   static const Color darkBackground = Color(0xFF0F172A);
   static const Color darkSurface = Color(0xFF1E293B);
   static const Color darkSurfaceVariant = Color(0xFF334155);
@@ -186,7 +36,6 @@ class AppTheme {
   static const Color darkDivider = Color(0xFF475569);
   static const Color darkBorder = Color(0xFF64748B);
 
-  // Gradient Collections
   static const LinearGradient primaryGradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
@@ -217,7 +66,6 @@ class AppTheme {
     colors: [darkBackground, darkSurface],
   );
 
-  // Enhanced Light Theme
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     useMaterial3: true,
@@ -244,7 +92,6 @@ class AppTheme {
     ),
     scaffoldBackgroundColor: lightBackground,
     
-    // Enhanced Card Theme
     cardTheme: CardTheme(
       elevation: 2,
       shadowColor: lightPrimaryText.withOpacity(0.08),
@@ -253,7 +100,6 @@ class AppTheme {
       margin: const EdgeInsets.all(8),
     ),
     
-    // Enhanced AppBar Theme
     appBarTheme: AppBarTheme(
       backgroundColor: Colors.transparent,
       elevation: 0,
@@ -269,7 +115,6 @@ class AppTheme {
       actionsIconTheme: const IconThemeData(color: lightPrimaryText),
     ),
     
-    // Enhanced Text Theme
     textTheme: const TextTheme(
       displayLarge: TextStyle(
         color: lightPrimaryText,
@@ -358,7 +203,6 @@ class AppTheme {
       ),
     ),
     
-    // Enhanced Tab Bar Theme
     tabBarTheme: TabBarTheme(
       labelColor: primaryColor,
       unselectedLabelColor: lightSecondaryText,
@@ -375,7 +219,6 @@ class AppTheme {
       overlayColor: MaterialStateProperty.all(primaryColor.withOpacity(0.1)),
     ),
     
-    // Enhanced Button Themes
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: primaryColor,
@@ -422,7 +265,6 @@ class AppTheme {
       ),
     ),
     
-    // Enhanced Input Decoration Theme
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: lightSurfaceVariant,
@@ -445,7 +287,6 @@ class AppTheme {
       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
     ),
     
-    // Enhanced Icon Theme
     iconTheme: const IconThemeData(
       color: primaryColor,
       size: 24,
@@ -459,7 +300,6 @@ class AppTheme {
     ),
   );
 
-  // Enhanced Dark Theme
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
     useMaterial3: true,
@@ -486,7 +326,6 @@ class AppTheme {
     ),
     scaffoldBackgroundColor: darkBackground,
     
-    // Enhanced Card Theme for Dark Mode
     cardTheme: CardTheme(
       elevation: 4,
       shadowColor: Colors.black.withOpacity(0.3),
@@ -495,7 +334,6 @@ class AppTheme {
       margin: const EdgeInsets.all(8),
     ),
     
-    // Enhanced AppBar Theme for Dark Mode
     appBarTheme: AppBarTheme(
       backgroundColor: Colors.transparent,
       elevation: 0,
@@ -511,7 +349,6 @@ class AppTheme {
       actionsIconTheme: const IconThemeData(color: darkPrimaryText),
     ),
     
-    // Enhanced Text Theme for Dark Mode
     textTheme: const TextTheme(
       displayLarge: TextStyle(
         color: darkPrimaryText,
@@ -600,7 +437,6 @@ class AppTheme {
       ),
     ),
     
-    // Enhanced Tab Bar Theme for Dark Mode
     tabBarTheme: TabBarTheme(
       labelColor: primaryLight,
       unselectedLabelColor: darkSecondaryText,
@@ -617,7 +453,6 @@ class AppTheme {
       overlayColor: MaterialStateProperty.all(primaryLight.withOpacity(0.1)),
     ),
     
-    // Enhanced Button Themes for Dark Mode
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: primaryLight,
@@ -664,7 +499,6 @@ class AppTheme {
       ),
     ),
     
-    // Enhanced Input Decoration Theme for Dark Mode
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: darkSurfaceVariant,
@@ -687,7 +521,6 @@ class AppTheme {
       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
     ),
     
-    // Enhanced Icon Theme for Dark Mode
     iconTheme: const IconThemeData(
       color: primaryLight,
       size: 24,
@@ -701,7 +534,6 @@ class AppTheme {
     ),
   );
 
-  // Utility methods for custom styling
   static BoxShadow get lightCardShadow => BoxShadow(
         color: lightPrimaryText.withOpacity(0.08),
         blurRadius: 8,
@@ -718,7 +550,6 @@ class AppTheme {
   static BorderRadius get largeBorderRadius => BorderRadius.circular(16);
   static BorderRadius get extraLargeBorderRadius => BorderRadius.circular(24);
 
-  // Animation durations
   static const Duration fastAnimation = Duration(milliseconds: 200);
   static const Duration mediumAnimation = Duration(milliseconds: 300);
   static const Duration slowAnimation = Duration(milliseconds: 500);

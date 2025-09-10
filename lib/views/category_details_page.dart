@@ -3,11 +3,8 @@ import 'package:get/get.dart';
 import '../controllers/theme_controller.dart';
 import '../models/shortcut_model.dart';
 import '../theme.dart';
-import '../utils/constants/string_constants.dart';
 import '../utils/database_helper.dart';
-import '../controllers/shortcut_controller.dart';
 import '../services/pdf_service.dart';
-import 'dart:io';
 
 class CategoryDetailsPage extends StatefulWidget {
   final String categoryName;
@@ -29,7 +26,7 @@ class CategoryDetailsPage extends StatefulWidget {
 
 class _CategoryDetailsPageState extends State<CategoryDetailsPage> {
   final TextEditingController _searchController = TextEditingController();
-  String _searchQuery = '';
+  // String _searchQuery = '';
   final RxList<ShortcutModel> _shortcuts = <ShortcutModel>[].obs;
   final Map<String, bool> _bookmarkedShortcuts = {};
   final DatabaseHelper _dbHelper = DatabaseHelper();

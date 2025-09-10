@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
-import 'pdf_service.dart';
-import '../utils/theme_utils.dart';
+import 'package:keyboard_shortcuts_app/utils/import_exports.dart';
 
 class PdfServiceBinding extends Bindings {
   @override

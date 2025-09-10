@@ -1,15 +1,5 @@
+import 'package:keyboard_shortcuts_app/utils/import_exports.dart';
 import 'dart:io';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:keyboard_shortcuts_app/models/shortcut_model.dart';
-import '../controllers/category_controller.dart';
-import '../controllers/theme_controller.dart';
-import '../models/category_model.dart';
-import '../theme.dart';
-import '../views/app_category_details_page.dart';
-import '../views/category_details_page.dart';
-import '../services/pdf_service.dart';
 
 class CategoryPage extends StatefulWidget {
   final CategoryController controller;
@@ -84,20 +74,13 @@ class _CategoryPageState extends State<CategoryPage>
             child: CustomScrollView(
               physics: const BouncingScrollPhysics(),
               slivers: [
-                // Custom App Bar
                 _buildSliverAppBar(isDarkMode),
-
-                // Search Bar
                 SliverToBoxAdapter(
                   child: _buildSearchSection(isDarkMode),
                 ),
-
-                // Categories Header
                 SliverToBoxAdapter(
                   child: _buildCategoriesHeader(isDarkMode),
                 ),
-
-                // Categories List
                 _buildCategoriesList(isDarkMode),
               ],
             ),
@@ -110,12 +93,12 @@ class _CategoryPageState extends State<CategoryPage>
 
   Widget _buildSliverAppBar(bool isDarkMode) {
     return SliverAppBar(
-      expandedHeight: 80, // Reduced significantly
+      expandedHeight: 80,
       floating: false,
       pinned: true,
       elevation: 0,
       backgroundColor: Colors.transparent,
-      toolbarHeight: 60, // Set specific toolbar height
+      toolbarHeight: 60,
       flexibleSpace: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -146,7 +129,7 @@ class _CategoryPageState extends State<CategoryPage>
             style: TextStyle(
               color: isDarkMode ? AppTheme.darkPrimaryText : Colors.white,
               fontWeight: FontWeight.bold,
-              fontSize: 16, // Reduced font size
+              fontSize: 16,
             ),
           ),
           centerTitle: true,
@@ -154,8 +137,7 @@ class _CategoryPageState extends State<CategoryPage>
         ),
       ),
       leading: Container(
-        margin: const EdgeInsets.only(
-            left: 8, top: 6, bottom: 6), // Reduced margins
+        margin: const EdgeInsets.only(left: 8, top: 6, bottom: 6),
         decoration: BoxDecoration(
           color: (isDarkMode ? AppTheme.darkPrimaryText : Colors.white)
               .withOpacity(0.15),
@@ -167,7 +149,7 @@ class _CategoryPageState extends State<CategoryPage>
           ),
         ),
         child: IconButton(
-          iconSize: 18, // Reduced icon size
+          iconSize: 18,
           icon: Icon(
             Icons.arrow_back_rounded,
             color: isDarkMode ? AppTheme.darkPrimaryText : Colors.white,
@@ -177,8 +159,7 @@ class _CategoryPageState extends State<CategoryPage>
       ),
       actions: [
         Container(
-          margin: const EdgeInsets.only(
-              right: 8, top: 6, bottom: 6), // Reduced margins
+          margin: const EdgeInsets.only(right: 8, top: 6, bottom: 6),
           decoration: BoxDecoration(
             color: (isDarkMode ? AppTheme.darkPrimaryText : Colors.white)
                 .withOpacity(0.15),

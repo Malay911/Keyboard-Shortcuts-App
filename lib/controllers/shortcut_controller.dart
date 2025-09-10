@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
-import '../models/shortcut_model.dart';
-import '../utils/database_helper.dart';
+import 'package:keyboard_shortcuts_app/utils/import_exports.dart';
 import 'dart:io';
 
 class ShortcutController extends GetxController {
@@ -15,11 +13,12 @@ class ShortcutController extends GetxController {
     return 'windows';
   }
 
-  Future<List<ShortcutModel>> getShortcutsByCategory(String category, [String? appName]) async {
+  Future<List<ShortcutModel>> getShortcutsByCategory(String category,
+      [String? appName]) async {
     isLoading.value = true;
     try {
-      final results =
-          await _dbHelper.getShortcutsByCategory(category, currentOS, appName: appName);
+      final results = await _dbHelper
+          .getShortcutsByCategory(category, currentOS, appName: appName);
       shortcuts.value = results;
       return results;
     } finally {
@@ -34,7 +33,7 @@ class ShortcutController extends GetxController {
       print('Error reloading database: $e');
     }
   }
-  
+
   Future<List<String>> getAllCategories([String? appName]) async {
     try {
       return await _dbHelper.getCategories(currentOS, appName: appName);
@@ -43,7 +42,7 @@ class ShortcutController extends GetxController {
       return [];
     }
   }
-  
+
   Future<List<String>> getAllCategoriesByOS(String osType) async {
     try {
       return await _dbHelper.getCategories(osType);
@@ -52,24 +51,22 @@ class ShortcutController extends GetxController {
       return [];
     }
   }
-  
+
   Future<List<ShortcutModel>> getShortcutsByCategoryAndOS(
-    String category,
-    String osType,
-    {String? appName}
-  ) async {
+      String category, String osType,
+      {String? appName}) async {
     isLoading.value = true;
     try {
-      final results = await _dbHelper.getShortcutsByCategory(category, osType, appName: appName);
+      final results = await _dbHelper.getShortcutsByCategory(category, osType,
+          appName: appName);
       return results;
     } finally {
       isLoading.value = false;
     }
   }
-  
+
   Future<List<String>> getAllApps() async {
     try {
-      // Return all available apps regardless of current OS
       return [
         'Visual Studio Code',
         'Android Studio',
@@ -98,7 +95,6 @@ class ShortcutController extends GetxController {
 
   Future<List<String>> getAllBrowsers() async {
     try {
-      // Return all available browsers regardless of current OS
       return ['Chrome', 'Edge', 'Brave', 'Safari'];
     } catch (e) {
       print('Error getting browsers: $e');
@@ -131,5 +127,4 @@ class ShortcutController extends GetxController {
       isLoading.value = false;
     }
   }
-
 }

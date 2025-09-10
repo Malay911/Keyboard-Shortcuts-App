@@ -1,14 +1,6 @@
+import 'package:keyboard_shortcuts_app/utils/import_exports.dart';
 import 'dart:io';
-import 'package:flutter/services.dart';
-import 'package:get/get.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
-import 'package:printing/printing.dart';
-import 'package:share_plus/share_plus.dart';
-import '../controllers/shortcut_controller.dart';
-import '../models/shortcut_model.dart';
-import '../utils/theme_utils.dart';
 
 class PdfService extends GetxService {
   final ShortcutController _shortcutController = Get.find<ShortcutController>();

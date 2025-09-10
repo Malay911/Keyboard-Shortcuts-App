@@ -1,8 +1,4 @@
-// import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
-// import 'package:shared_preferences/shared_preferences.dart';
 import 'package:keyboard_shortcuts_app/utils/import_exports.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeController extends GetxController {
   static const String themeKey = 'is_dark_mode';
@@ -10,7 +6,6 @@ class ThemeController extends GetxController {
 
   bool get isDarkMode => _isDarkMode.value;
   
-  // Expose the observable for other classes to listen to
   RxBool get isDarkModeObs => _isDarkMode;
 
   ThemeMode get themeMode =>

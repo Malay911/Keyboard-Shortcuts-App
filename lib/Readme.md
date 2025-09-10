@@ -49,10 +49,3 @@ MaterialApp(
     textTheme: TextTheme(bodyMedium: TextStyle(color: Colors.white)),
   ),
 );
-🖌️ Optional Additions
-Use GoogleFonts.inter() or GoogleFonts.robotoMono() for clean typography.
-
-Include a subtle glow or shadow around shortcut keys for visual hierarchy.
-
-Icons should have a uniform color and size (white in dark mode, black or grey in light mode).
-

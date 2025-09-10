@@ -1,7 +1,4 @@
 import 'package:keyboard_shortcuts_app/utils/import_exports.dart';
-import 'package:keyboard_shortcuts_app/views/about_us_page.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:share_plus/share_plus.dart';
 
 class AppDrawer extends StatefulWidget {
   const AppDrawer({Key? key}) : super(key: key);

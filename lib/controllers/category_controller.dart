@@ -1,9 +1,4 @@
 import '../utils/import_exports.dart';
-// import 'package:get/get.dart';
-// import 'package:keyboard_shortcuts_app/utils/constants/string_constants.dart';
-import '../models/category_model.dart';
-// import '../utils/database_helper.dart';
-// import 'package:flutter/material.dart';
 
 class CategoryController extends GetxController {
   final String parentName;
@@ -92,13 +87,11 @@ class CategoryController extends GetxController {
         final shortcutDesc = shortcut.description?.toLowerCase() ?? '';
         final shortcutAction = shortcut.action?.toLowerCase() ?? '';
 
-        // Normalize shortcut keys by removing spaces after modifiers
         final shortcutKeys = (shortcut.keys?.toLowerCase() ?? '')
             .replaceAll('ctrl + ', 'ctrl+')
             .replaceAll('shift + ', 'shift+')
             .replaceAll('alt + ', 'alt+');
 
-        // Normalize search query the same way
         final normalizedQuery = searchQuery
             .replaceAll('ctrl + ', 'ctrl+')
             .replaceAll('shift + ', 'shift+')
@@ -298,7 +291,6 @@ class CategoryController extends GetxController {
         return 'assets/icons/category-tools.svg';
       case 'filter':
         return 'assets/icons/category-filter.svg';
-      // IntelliJ IDEA categories (additional ones not already covered)
       case 'code':
         return 'assets/icons/category-developer.svg';
       case 'execution':

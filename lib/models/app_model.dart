@@ -1,5 +1,4 @@
 import 'package:keyboard_shortcuts_app/utils/import_exports.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class AppModel {
   final String name;

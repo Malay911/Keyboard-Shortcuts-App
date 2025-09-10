@@ -1,5 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
 import 'package:keyboard_shortcuts_app/utils/import_exports.dart';
 
 class HomeController extends GetxController
@@ -45,67 +43,4 @@ class HomeController extends GetxController
     searchController.clear();
     searchQuery.value = '';
   }
-
-  // void showAddShortcutDialog() {
-  //   final appController = TextEditingController();
-  //   final actionController = TextEditingController();
-  //   final keysController = TextEditingController();
-
-  //   Get.dialog(
-  //     AlertDialog(
-  //       title: const Text('Add New Shortcut'),
-  //       content: SingleChildScrollView(
-  //         child: Column(
-  //           mainAxisSize: MainAxisSize.min,
-  //           children: [
-  //             TextField(
-  //               controller: appController,
-  //               decoration: const InputDecoration(
-  //                 labelText: 'Application/OS',
-  //                 hintText: 'e.g., Visual Studio Code, Windows, macOS',
-  //               ),
-  //             ),
-  //             const SizedBox(height: 16),
-  //             TextField(
-  //               controller: actionController,
-  //               decoration: const InputDecoration(
-  //                 labelText: 'Action',
-  //                 hintText: 'e.g., Save File, Copy, Paste',
-  //               ),
-  //             ),
-  //             const SizedBox(height: 16),
-  //             TextField(
-  //               controller: keysController,
-  //               decoration: const InputDecoration(
-  //                 labelText: 'Shortcut Keys',
-  //                 hintText: 'e.g., Ctrl+S, Cmd+C',
-  //               ),
-  //             ),
-  //           ],
-  //         ),
-  //       ),
-  //       actions: [
-  //         TextButton(
-  //           onPressed: () => Get.back(),
-  //           child: const Text('Cancel'),
-  //         ),
-  //         ElevatedButton(
-  //           onPressed: () {
-  //             Get.back();
-  //             Get.snackbar(
-  //               'Success',
-  //               'Shortcut added successfully!',
-  //               snackPosition: SnackPosition.BOTTOM,
-  //               duration: const Duration(seconds: 2),
-  //             );
-  //           },
-  //           style: ElevatedButton.styleFrom(
-  //             backgroundColor: Theme.of(Get.context!).primaryColor,
-  //           ),
-  //           child: const Text('Save'),
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
 }
