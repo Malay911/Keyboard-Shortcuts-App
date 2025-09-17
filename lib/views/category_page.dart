@@ -93,7 +93,7 @@ class _CategoryPageState extends State<CategoryPage>
 
   Widget _buildSliverAppBar(bool isDarkMode) {
     return SliverAppBar(
-      expandedHeight: 80,
+      expandedHeight: 70,
       floating: false,
       pinned: true,
       elevation: 0,
@@ -620,28 +620,37 @@ class _CategoryPageState extends State<CategoryPage>
   }
 
   void _navigateToDetails(CategoryModel category) {
-    if (widget.controller.isApp) {
-      Get.to(
-        () => AppCategoryDetailsPage(
-          categoryName: category.name,
-          appName: widget.controller.parentName,
-          osType: widget.controller.osType,
-        ),
-        transition: Transition.rightToLeft,
-        duration: const Duration(milliseconds: 300),
-      );
-    } else {
-      Get.to(
-        () => CategoryDetailsPage(
-          categoryName: category.name,
-          parentName: widget.controller.parentName,
-          osType: widget.controller.osType,
-          isApp: false,
-        ),
-        transition: Transition.rightToLeft,
-        duration: const Duration(milliseconds: 300),
-      );
-    }
+    // Dismiss keyboard before navigating to details
+    _searchFocusNode.unfocus();
+    FocusManager.instance.primaryFocus?.unfocus();
+
+    final future = widget.controller.isApp
+        ? Get.to(
+            () => AppCategoryDetailsPage(
+              categoryName: category.name,
+              appName: widget.controller.parentName,
+              osType: widget.controller.osType,
+            ),
+            transition: Transition.rightToLeft,
+            duration: const Duration(milliseconds: 300),
+          )
+        : Get.to(
+            () => CategoryDetailsPage(
+              categoryName: category.name,
+              parentName: widget.controller.parentName,
+              osType: widget.controller.osType,
+              isApp: false,
+            ),
+            transition: Transition.rightToLeft,
+            duration: const Duration(milliseconds: 300),
+          );
+
+    // Ensure keyboard stays closed when returning from details
+    future?.then((_) {
+      if (!mounted) return;
+      _searchFocusNode.unfocus();
+      FocusManager.instance.primaryFocus?.unfocus();
+    });
   }
 
   void _showPdfOptions() {

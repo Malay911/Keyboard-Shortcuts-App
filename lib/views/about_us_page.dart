@@ -92,32 +92,6 @@ class AboutUsPage extends StatelessWidget {
           Row(
             children: [
               Expanded(
-                flex: 1,
-                child: Container(
-                  height: logoHeight,
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                      color: Colors.grey.withOpacity(0.2),
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.1),
-                        blurRadius: 4,
-                        offset: const Offset(0, 2),
-                      ),
-                    ],
-                  ),
-                  child: Image.asset(
-                    'assets/images/ASWDC.jpg',
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
                 flex: 2,
                 child: Container(
                   height: logoHeight,
@@ -125,9 +99,9 @@ class AboutUsPage extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(
-                      color: Colors.grey.withOpacity(0.2),
-                    ),
+                    // border: Border.all(
+                    //   color: Colors.grey.withOpacity(0.2),
+                    // ),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.withOpacity(0.1),
@@ -138,6 +112,32 @@ class AboutUsPage extends StatelessWidget {
                   ),
                   child: Image.asset(
                     'assets/images/darshan_logo2.png',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  height: logoHeight,
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                    // border: Border.all(
+                    //   color: Colors.grey.withOpacity(0.2),
+                    // ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.1),
+                        blurRadius: 4,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child: Image.asset(
+                    'assets/images/ASWDC.jpg',
                     fit: BoxFit.contain,
                   ),
                 ),

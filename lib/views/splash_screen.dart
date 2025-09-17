@@ -422,23 +422,23 @@ class _SplashScreenState extends State<SplashScreen>
       child: Row(
         children: [
           Expanded(
-            flex: 1,
-            child: Container(
-              height: 80,
-              padding: const EdgeInsets.all(16),
-              child: Image.asset(
-                'assets/images/ASWDC.jpg',
-                fit: BoxFit.contain,
-              ),
-            ),
-          ),
-          Expanded(
             flex: 2,
             child: Container(
               height: 80,
               padding: const EdgeInsets.all(16),
               child: Image.asset(
                 'assets/images/darshan_logo2.png',
+                fit: BoxFit.contain,
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              height: 80,
+              padding: const EdgeInsets.all(16),
+              child: Image.asset(
+                'assets/images/ASWDC.jpg',
                 fit: BoxFit.contain,
               ),
             ),

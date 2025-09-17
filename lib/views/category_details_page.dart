@@ -65,8 +65,8 @@ class _CategoryDetailsPageState extends State<CategoryDetailsPage> {
       }
 
       setState(() {
-        _allShortcuts.value = shortcuts; // Store all shortcuts
-        _shortcuts.value = shortcuts; // Current filtered shortcuts
+        _allShortcuts.value = shortcuts;
+        _shortcuts.value = shortcuts;
         _bookmarkedShortcuts.clear();
         for (var shortcut in shortcuts) {
           _bookmarkedShortcuts[shortcut.action] = false;
@@ -84,7 +84,7 @@ class _CategoryDetailsPageState extends State<CategoryDetailsPage> {
   void _filterShortcuts(String query) {
     setState(() {
       if (query.isEmpty) {
-        _shortcuts.value = _allShortcuts; // Reset to all shortcuts
+        _shortcuts.value = _allShortcuts;
         return;
       }
 
@@ -227,7 +227,11 @@ class _CategoryDetailsPageState extends State<CategoryDetailsPage> {
             Icons.arrow_back_rounded,
             color: isDarkMode ? AppTheme.darkPrimaryText : Colors.white,
           ),
-          onPressed: () => Get.back(),
+          onPressed: () {
+            // Ensure any open keyboard is dismissed before navigating back
+            FocusManager.instance.primaryFocus?.unfocus();
+            Get.back();
+          },
         ),
       ),
       actions: [

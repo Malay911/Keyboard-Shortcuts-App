@@ -224,7 +224,10 @@ class _AppCategoryDetailsPageState extends State<AppCategoryDetailsPage> {
             Icons.arrow_back_rounded,
             color: isDarkMode ? AppTheme.darkPrimaryText : Colors.white,
           ),
-          onPressed: () => Get.back(),
+          onPressed: () {
+            FocusManager.instance.primaryFocus?.unfocus();
+            Get.back();
+          },
         ),
       ),
       actions: [
