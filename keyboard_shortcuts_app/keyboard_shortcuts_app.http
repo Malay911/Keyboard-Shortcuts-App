@@ -1,6 +1,0 @@
-@keyboard_shortcuts_app_HostAddress = http://localhost:5031
-
-GET {{keyboard_shortcuts_app_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
