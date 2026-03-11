@@ -4,32 +4,27 @@ class AboutUsPage extends StatelessWidget {
   const AboutUsPage({Key? key}) : super(key: key);
 
   Future<void> _shareApp() async {
-    const String appLink =
-        'https://play.google.com/store/apps/details?id=in.ac.darshan.keyboardshortcuts';
-    const String message =
-        'Check out Keyboard Shortcuts App by Darshan University!\n\n$appLink';
-    await Share.share(message);
+    await Share.share(StringConstants.shareMessage);
   }
 
-  Future<void> _rateApp() async {
-    const String packageName = 'in.ac.darshan.keyboardshortcuts';
-    final Uri playStoreUri = Uri.parse('market://details?id=$packageName');
-    final Uri webPlayStoreUri =
-        Uri.parse('https://play.google.com/store/apps/details?id=$packageName');
+  Future<void> _launchPlayStore(
+      {String errorMessage =
+          'Could not open Play Store. Please try again later.'}) async {
+    final Uri marketUri = Uri.parse(StringConstants.marketUrl);
+    final Uri webUri = Uri.parse(StringConstants.playStoreUrl);
 
     try {
-      bool canLaunch = await canLaunchUrl(playStoreUri);
+      bool canLaunch = await canLaunchUrl(marketUri);
       if (canLaunch) {
-        await launchUrl(playStoreUri, mode: LaunchMode.externalApplication);
+        await launchUrl(marketUri, mode: LaunchMode.externalApplication);
       } else {
-        await launchUrl(webPlayStoreUri, mode: LaunchMode.externalApplication);
+        await launchUrl(webUri, mode: LaunchMode.externalApplication);
       }
     } catch (e) {
       Get.dialog(
         AlertDialog(
           title: const Text('Error'),
-          content:
-              const Text('Could not open Play Store. Please try again later.'),
+          content: Text(errorMessage),
           actions: [
             TextButton(
               onPressed: () => Get.back(),
@@ -41,41 +36,18 @@ class AboutUsPage extends StatelessWidget {
     }
   }
 
+  Future<void> _rateApp() async {
+    await _launchPlayStore();
+  }
+
   Future<void> _showMoreApps() async {
-    const String developerLink =
-        'https://play.google.com/store/apps/dev?id=7093579953062919700'; // Darshan University's developer ID
-    await launchUrl(Uri.parse(developerLink),
+    await launchUrl(Uri.parse(StringConstants.moreAppsUrl),
         mode: LaunchMode.externalApplication);
   }
 
   Future<void> _checkUpdates() async {
-    const String packageName = 'in.ac.darshan.keyboardshortcuts';
-    final Uri playStoreUri = Uri.parse('market://details?id=$packageName');
-    final Uri webPlayStoreUri =
-        Uri.parse('https://play.google.com/store/apps/details?id=$packageName');
-
-    try {
-      bool canLaunch = await canLaunchUrl(playStoreUri);
-      if (canLaunch) {
-        await launchUrl(playStoreUri, mode: LaunchMode.externalApplication);
-      } else {
-        await launchUrl(webPlayStoreUri, mode: LaunchMode.externalApplication);
-      }
-    } catch (e) {
-      Get.dialog(
-        AlertDialog(
-          title: const Text('Error'),
-          content: const Text(
-              'Could not check for updates. Please try again later.'),
-          actions: [
-            TextButton(
-              onPressed: () => Get.back(),
-              child: const Text('OK'),
-            ),
-          ],
-        ),
-      );
-    }
+    await _launchPlayStore(
+        errorMessage: 'Could not check for updates. Please try again later.');
   }
 
   Widget _buildAboutSection(bool isDarkMode) {

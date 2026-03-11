@@ -49,6 +49,7 @@ export '../views/app_category_details_page.dart';
 export '../views/os_page.dart';
 export '../views/browser_page.dart';
 export 'package:keyboard_shortcuts_app/views/about_us_page.dart';
+export 'package:keyboard_shortcuts_app/views/feedback_screen.dart';
 
 // Services
 export '../services/pdf_service_binding.dart';

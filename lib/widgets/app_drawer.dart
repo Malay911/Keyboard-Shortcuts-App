@@ -88,50 +88,66 @@ class _AppDrawerState extends State<AppDrawer> with TickerProviderStateMixin {
                     Expanded(
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 16),
-                        child: Column(
-                          children: [
-                            _buildAnimatedMenuItem(
-                              icon: themeController.isDarkMode
-                                  ? Icons.light_mode_rounded
-                                  : Icons.dark_mode_rounded,
-                              title: 'Theme Mode',
-                              isDarkMode: isDarkMode,
-                              delay: 200,
-                              trailing: _buildThemeSwitch(
-                                  themeController, isDarkMode),
-                            ),
-                            _buildDivider(isDarkMode),
-                            _buildAnimatedMenuItem(
-                              icon: Icons.info_outline_rounded,
-                              title: 'About Us',
-                              isDarkMode: isDarkMode,
-                              delay: 400,
-                              onTap: () {
-                                Get.back();
-                                Get.to(
-                                  () => const AboutUsPage(),
-                                  transition: Transition.rightToLeft,
-                                  duration: const Duration(milliseconds: 300),
-                                );
-                              },
-                            ),
-                            _buildAnimatedMenuItem(
-                              icon: Icons.star_rounded,
-                              title: 'Rate App',
-                              isDarkMode: isDarkMode,
-                              delay: 600,
-                              onTap: _rateApp,
-                            ),
-                            _buildAnimatedMenuItem(
-                              icon: Icons.share_rounded,
-                              title: 'Share App',
-                              isDarkMode: isDarkMode,
-                              delay: 800,
-                              onTap: _shareApp,
-                            ),
-                            const Spacer(),
-                            _buildFooter(isDarkMode),
-                          ],
+                        child: SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              _buildAnimatedMenuItem(
+                                icon: themeController.isDarkMode
+                                    ? Icons.light_mode_rounded
+                                    : Icons.dark_mode_rounded,
+                                title: 'Theme Mode',
+                                isDarkMode: isDarkMode,
+                                delay: 200,
+                                trailing: _buildThemeSwitch(
+                                    themeController, isDarkMode),
+                              ),
+                              _buildDivider(isDarkMode),
+                              _buildAnimatedMenuItem(
+                                icon: Icons.info_outline_rounded,
+                                title: 'About Us',
+                                isDarkMode: isDarkMode,
+                                delay: 400,
+                                onTap: () {
+                                  Get.back();
+                                  Get.to(
+                                    () => const AboutUsPage(),
+                                    transition: Transition.rightToLeft,
+                                    duration: const Duration(milliseconds: 300),
+                                  );
+                                },
+                              ),
+                              _buildAnimatedMenuItem(
+                                icon: Icons.star_rounded,
+                                title: 'Rate App',
+                                isDarkMode: isDarkMode,
+                                delay: 600,
+                                onTap: _rateApp,
+                              ),
+                              _buildAnimatedMenuItem(
+                                icon: Icons.feedback_rounded,
+                                title: StringConstants.feedbackTitle,
+                                isDarkMode: isDarkMode,
+                                delay: 700,
+                                onTap: () {
+                                  Get.back();
+                                  Get.to(
+                                    () => const FeedbackScreen(),
+                                    transition: Transition.rightToLeft,
+                                    duration: const Duration(milliseconds: 300),
+                                  );
+                                },
+                              ),
+                              _buildAnimatedMenuItem(
+                                icon: Icons.share_rounded,
+                                title: 'Share App',
+                                isDarkMode: isDarkMode,
+                                delay: 800,
+                                onTap: _shareApp,
+                              ),
+                              const SizedBox(height: 16),
+                              _buildFooter(isDarkMode),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -577,25 +593,19 @@ class _AppDrawerState extends State<AppDrawer> with TickerProviderStateMixin {
   }
 
   Future<void> _shareApp() async {
-    const String appLink =
-        'https://play.google.com/store/apps/details?id=in.ac.darshan.keyboardshortcuts';
-    const String message =
-        'Check out Keyboard Shortcuts App by Darshan University!\n\n$appLink';
-    await Share.share(message);
+    await Share.share(StringConstants.shareMessage);
   }
 
   Future<void> _rateApp() async {
-    const String packageName = 'in.ac.darshan.keyboardshortcuts';
-    final Uri playStoreUri = Uri.parse('market://details?id=$packageName');
-    final Uri webPlayStoreUri =
-        Uri.parse('https://play.google.com/store/apps/details?id=$packageName');
+    final Uri marketUri = Uri.parse(StringConstants.marketUrl);
+    final Uri webUri = Uri.parse(StringConstants.playStoreUrl);
 
     try {
-      bool canLaunch = await canLaunchUrl(playStoreUri);
+      bool canLaunch = await canLaunchUrl(marketUri);
       if (canLaunch) {
-        await launchUrl(playStoreUri, mode: LaunchMode.externalApplication);
+        await launchUrl(marketUri, mode: LaunchMode.externalApplication);
       } else {
-        await launchUrl(webPlayStoreUri, mode: LaunchMode.externalApplication);
+        await launchUrl(webUri, mode: LaunchMode.externalApplication);
       }
     } catch (e) {
       Get.snackbar(

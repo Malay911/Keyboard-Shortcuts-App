@@ -67,9 +67,50 @@ class StringConstants {
   static const String categoryTaskbar = 'Taskbar';
   static const String categoryWindowManagement = 'Window Management';
 
+  // Feedback Screen
+  static const String feedbackTitle = 'Feedback';
+  static const String shareFeedback = 'Share Your Feedback';
+  static const String feedbackVersionPrefix = 'Version';
+  static const String nameLabel = 'Name';
+  static const String mobileLabel = 'Mobile Number';
+  static const String emailLabel = 'Email';
+  static const String feedbackLabel = 'Feedback';
+  static const String submitButtonText = 'Submit';
+  static const String clearButtonText = 'Clear';
+  static const String successMessage = 'Feedback sent successfully!';
+  static const String fillAllFieldsMessage = 'Please fill all fields';
+  static const String invalidNameMessage = 'Name should contain only letters and spaces';
+  static const String invalidMobileMessage = 'Mobile number must be exactly 10 digits';
+  static const String invalidEmailMessage = 'Please enter a valid email address';
+  static const String emptyFeedbackMessage = 'Feedback cannot be empty';
+  static const String errorPrefix = 'Error: ';
+  static const String failedToSendPrefix = 'Failed to send feedback: ';
+  static const String platformAndroid = 'Android';
+  static const String platformIOS = 'iOS';
+  static const String feedbackApiUrl = 'http://api.aswdc.in/Api/MST_AppVersions/PostAppFeedback/AppPostFeedback';
+  static const String appNameFeedback = 'keyboard_shortcuts_app';
+  static const String apiKey = '1234';
+
   // Routes
   static const String splashRoute = '/';
   static const String homeRoute = '/home';
   static const String categoriesRoute = '/categories';
   static const String categoryDetailsRoute = '/category-details';
+
+  // Play Store Links
+  static const String appPackageName = 'com.aswdc_keyboardshortcuts';
+  static const String playStoreUrl =
+      'https://play.google.com/store/apps/details?id=$appPackageName&hl=en_IN';
+  static const String marketUrl = 'market://details?id=$appPackageName';
+  static const String moreAppsUrl =
+      'https://play.google.com/store/apps/developer?id=Darshan+University';
+  static const String shareMessage =
+      '⌨️ *Keyboard Shortcuts* - Your Ultimate Productivity Booster!\n\n'
+      '🚀 Master 1000+ shortcuts for Windows, Mac, Linux, VS Code, Chrome, Excel & more!\n\n'
+      '✅ Works offline\n'
+      '✅ Clean & simple UI\n'
+      '✅ Dark mode supported\n'
+      '✅ Share as PDF\n\n'
+      '💡 Stop clicking, start shortcutting! Download now 👇\n'
+      '$playStoreUrl';
 }
